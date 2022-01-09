@@ -15,12 +15,12 @@ header {
 }
 main {
   font-family: "Josefin Sans", "Open Sans", sans-serif;
-  align-items: left;
+  align-items: center;
 }
 footer {
   align-items: center;
   margin: 1em;
   background-color: #9ea088; /* artichoke green */
   display: grid;
-  grid-template-columns: 350 auto;
+  grid-template-columns: 350px auto;
 }
