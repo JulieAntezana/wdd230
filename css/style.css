@@ -1,0 +1,26 @@
+#content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Josefin Sans", "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #9ea088; /* artichoke green */
+  align-items: center;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+main {
+  font-family: "Josefin Sans", "Open Sans", sans-serif;
+  align-items: left;
+}
+footer {
+  align-items: center;
+  margin: 1em;
+  background-color: #9ea088; /* artichoke green */
+  display: grid;
+  grid-template-columns: 350 auto;
+}
