@@ -6,6 +6,7 @@
 body {
   font-family: "Josefin Sans", "Open Sans", sans-serif;
   font-size: 16px;
+  line-height: 1.7em;
 }
 
 header {
@@ -23,8 +24,11 @@ header {
 
 footer {
   text-align: center;
-  margin: 0 auto;
   background-color: #9ea088; /* artichoke green */
   border-radius: 6px;
   padding: 10px;
+}
+#lastmod {
+  font-style: italic;
+  font-size: smaller;
 }
