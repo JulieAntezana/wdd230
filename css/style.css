@@ -1,12 +1,9 @@
-#content {
+body {
   max-width: 600px;
   margin: 0 auto;
-}
-
-body {
   font-family: "Josefin Sans", "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.7em;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 header {
@@ -22,12 +19,17 @@ header {
   padding: 10px;
 }
 
+main h2 {
+  border-bottom: 1px solid black;
+}
+
 footer {
   text-align: center;
   background-color: #9ea088; /* artichoke green */
   border-radius: 6px;
   padding: 10px;
 }
+
 #lastmod {
   font-style: italic;
   font-size: smaller;
