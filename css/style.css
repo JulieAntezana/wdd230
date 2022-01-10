@@ -10,16 +10,17 @@ header {
   background-color: #9ea088; /* artichoke green */
   align-items: center;
   border-radius: 6px;
-  padding: 10px;
+  padding: 5px;
   display: grid;
   grid-template-columns: 200px auto;
 }
 
 #picture {
-  padding: 10px;
+  padding: 5px;
 }
 
 main h2 {
+  margin-left: 10px;
   border-bottom: 1px solid black;
 }
 
@@ -33,4 +34,14 @@ footer {
 #lastmod {
   font-style: italic;
   font-size: smaller;
+}
+
+@media screen and (max-width: 390px) {
+  header,
+  main,
+  footer {
+    max-width: 100%;
+    font-size: 0.7em;
+    grid-template-columns: 150px auto;
+  }
 }
