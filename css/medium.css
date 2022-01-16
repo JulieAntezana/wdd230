@@ -1,0 +1,6 @@
+@media only screen and (min-width: 32.5em) {
+  body {
+    font-size: 1rem;
+    grid-template-columns: 200px auto;
+  }
+}

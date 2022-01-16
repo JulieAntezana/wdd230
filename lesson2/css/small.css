@@ -71,11 +71,3 @@ footer {background-color: #f5cbb3;
   font-style: italic;
   font-size: smaller;
 }
-
-@media screen and (max-width: 25em) {
-  header,
-  main,
-  footer {
-    max-width: 100%;
-  }
-}

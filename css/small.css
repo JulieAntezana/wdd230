@@ -6,21 +6,26 @@ body {
   max-width: 600px;
   margin: 0 auto;
   font-family: "Josefin Sans", "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: .7rem;
   line-height: 1.5rem;
 }
 
 header {
+  max-width: 100%;
   background-color: #9ea088; /* artichoke green */
   align-items: center;
   border-radius: 6px;
   padding: 5px;
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 150px auto;
 }
 
 #picture {
   padding: 5px;
+}
+
+main {
+  max-width: 100%;
 }
 
 main h2 {
@@ -33,19 +38,10 @@ footer {
   background-color: #9ea088; /* artichoke green */
   border-radius: 6px;
   padding: 10px;
+  max-width: 100%;
 }
 
 #lastmod {
   font-style: italic;
   font-size: smaller;
-}
-
-@media screen and (max-width: 390px) {
-  header,
-  main,
-  footer {
-    max-width: 100%;
-    font-size: 0.7em;
-    grid-template-columns: 150px auto;
-  }
 }
