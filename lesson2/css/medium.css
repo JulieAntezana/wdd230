@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32.5em) {
+  #content {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+  #section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: .9em;
+    max-width: 40em;
+  }
+
+  #third {
+    max-width: 50em;
+  }
+  
+  header,
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

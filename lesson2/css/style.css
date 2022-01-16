@@ -3,32 +3,64 @@ font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;*/
 
 body {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
   font-family: "Josefin Sans", "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.2em;
+  line-height: 1.4rem;
+  text-align: center;
+  margin:20px;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.2em;
 }
 
 header {
   background-color: #9ea088; /* artichoke green */
-  align-items: center;
   border-radius: 6px;
+  padding: .5rem;
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 1.1em;
+  background-color: #9ea088;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+section p {
+  font-size: .9em;
+  max-width: 100%;
+  padding: 10px;
+}
+
+section h4, a {
   padding: 5px;
-  display: grid;
-  grid-template-columns: 200px auto;
+  margin-bottom: 5px;
+  font-size: 1em;
 }
 
-#picture {
-  padding: 5px;
+#beauty,
+#third,
+#china {
+  background-color: #f5cbb3;
+  border-radius: 6px;
+  margin: 0, auto;
 }
 
-main h2 {
-  margin-left: 10px;
-  border-bottom: 1px solid black;
+img {
+  padding-top: 15px;
+  max-width: 100%;
+  margin: 0, auto;
 }
 
-footer {
+footer {background-color: #f5cbb3;
+  font-size: 1em;
   text-align: center;
   background-color: #9ea088; /* artichoke green */
   border-radius: 6px;
@@ -40,12 +72,10 @@ footer {
   font-size: smaller;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 25em) {
   header,
   main,
   footer {
     max-width: 100%;
-    font-size: 0.7em;
-    grid-template-columns: 150px auto;
   }
 }
