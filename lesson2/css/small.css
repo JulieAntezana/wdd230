@@ -3,6 +3,7 @@ font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;*/
 
 body {
+  font-size: 16px;
   max-width: 100%;
   font-family: "Josefin Sans", "Open Sans", sans-serif;
   font-size: 1.2em;
@@ -12,11 +13,11 @@ body {
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.1rem;
 }
 
 header {
@@ -27,22 +28,22 @@ header {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 0.9rem;
   background-color: #9ea088;
   border-radius: 6px;
-  padding: 10px;
-}
-
-section p {
-  font-size: .9em;
-  max-width: 100%;
   padding: 10px;
 }
 
 section h4, a {
   padding: 5px;
   margin-bottom: 5px;
-  font-size: 1em;
+  font-size: 0.9rem;
+}
+
+section p {
+  font-size: 0.9rem;
+  max-width: 100%;
+  padding: 10px;
 }
 
 #beauty,
@@ -60,7 +61,7 @@ img {
 }
 
 footer {background-color: #f5cbb3;
-  font-size: 1em;
+  font-size: 0.9rem;
   text-align: center;
   background-color: #9ea088; /* artichoke green */
   border-radius: 6px;

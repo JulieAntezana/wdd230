@@ -1,5 +1,10 @@
 @media only screen and (min-width: 40em) {
 
+  #content {
+    max-width: 20em;
+    margin: 0 auto;
+  }
+
   #section-home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
