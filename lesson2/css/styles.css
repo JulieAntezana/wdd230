@@ -120,11 +120,7 @@ main {
   text-decoration: underline;
 }
 
-@media(min-width: 1240px){
-  main {
-    padding: 1rem 15%;
-  }
-}
+
 @media(max-width: 768px){
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -134,7 +130,7 @@ main {
     grid-column: span 2;
   }
 }
-@media screen and (max-width: 550px) {}
+
 @media(max-width: 425px){
   .grid-container {
     display: block;
