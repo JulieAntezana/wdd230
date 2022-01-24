@@ -1,0 +1,22 @@
+@media (min-width: 500px) {
+  nav {
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1.5rem;
+  }
+  
+  h3 {
+      font-size: 1.5rem;
+      line-height: 2em;
+      padding-top: 0.5rem;
+  }
+
+  p, li {
+      font-size: 1.25rem;
+  }
+
+  .logo-image {
+    width: 425px;
+    height: 145px;
+  }
+}

@@ -15,11 +15,8 @@
       font-size: 1.25rem;
   }
 
-  table-header {
-      padding: 1vw;
-  }
-
-  td {
-      padding: 1vw;
+  .logo-image {
+    width: 425px;
+    height: 145px;
   }
 }

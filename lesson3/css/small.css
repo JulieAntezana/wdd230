@@ -68,9 +68,13 @@ nav div:hover {
   color: var(--nav-text-color);
 }
 
+.logo-image {
+  width: 15rem;
+  height: 8rem;
+}
+
 img {
-  max-width: 23vw;
-  border: solid 3px #060606;
+  border: solid 2px #060606;
 }
 
 .body-content {
