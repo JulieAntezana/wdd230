@@ -154,11 +154,3 @@ footer div {
   font-size: 1rem;
 }
 
-th {
-  background-color: var(--header-heading-color);
-  padding: 2vw;
-}
-
-td p {
-  padding: 2vw;
-}
