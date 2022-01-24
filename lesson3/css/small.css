@@ -5,7 +5,7 @@
   --header-footer-text-color: #ffffff;
   --header-heading-color: #ffffff;
   --nav-background-color: #064e40;
-  --nav-text-color: .#ffffff;
+  --nav-text-color: #ffffff;
   --nav-hover-background-color: #03045e;
   --heading-background-color: #b8fb3c;
   --heading-text-color: #060606;
@@ -154,7 +154,7 @@ footer div {
   font-size: 1rem;
 }
 
-table-header {
+th {
   background-color: var(--header-heading-color);
   padding: 2vw;
 }
