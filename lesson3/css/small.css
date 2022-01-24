@@ -76,6 +76,8 @@ nav div:hover {
 
 img {
   border: solid 2px #060606;
+  width: 225px;
+  height: 340px;
 }
 
 .body-content {
