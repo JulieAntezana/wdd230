@@ -1,29 +1,30 @@
 :root {
-  --main-bg-color: #FFFFFF;
-  --main-text-color: #130107;
-  --header-footer-bg-color: #03045e;
-  --header-footer-text-color: white;
-  --header-heading-color: white;
-  --nav-bg-color: #064e40;
-  --nav-text-color: .white;
-  --nav-hover-bg-color: #03045e;
-  --heading-bg-color: #b8fb3c;
-  --heading-text-color: #130107;
+  --main-background-color: #FFFFFF;
+  --main-text-color: #060606;
+  --header-footer-background-color: #03045e;
+  --header-footer-text-color: #ffffff;
+  --header-heading-color: #ffffff;
+  --nav-background-color: #064e40;
+  --nav-text-color: .#ffffff;
+  --nav-hover-background-color: #03045e;
+  --heading-background-color: #b8fb3c;
+  --heading-text-color: #060606;
+  --font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: var(--main-bg-color);
-  font-family: 'Merriweather Sans', monospace;
+  background-color: var(--main-background-color);
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .content p, .content a, li {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header h1 {
@@ -31,7 +32,7 @@ header h1 {
 }
 
 header, footer {
-  background-color: var(--header-footer-bg-color);
+  background-color: var(--header-footer-background-color);
   color: var(--header-footer-text-color);
   text-align: center;
 }
@@ -43,7 +44,7 @@ header, nav, main, footer {
 }
 
 nav {
-  background-color: var(--nav-bg-color); 
+  background-color: var(--nav-background-color); 
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -56,48 +57,35 @@ nav div {
 
 nav a {
   text-align: center;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
 nav div:hover {
-  background-color: var(--nav-hover-bg-color);
+  background-color: var(--nav-hover-background-color);
   color: var(--nav-text-color);
 }
 
 img {
-  max-width: 25vw;
-  border: solid 3px black;
+  max-width: 23vw;
+  border: solid 3px #060606;
 }
 
 .body-content {
-  display: grid;
-  grid-gap: 2vw;
-  grid-template-rows: 2em auto 2em 20vw;
   max-width: 960px;
   margin: auto;
   text-align: center;
 }
 
-#logo {
-  grid-row: 3/4;
-}
-
-.body-content p {
-  grid-row: 2/3;
-  padding: 1vw;
-}
-
 .body-content img {
-  grid-row: 4/5;
   margin: 0 auto;
-  margin-top: 3.5vw;
+  padding: 1vw;
+
 }
 
 h3 {
-  height: 100%;
   padding: 0.25em;
-  background-color: var(--heading-bg-color);
+  background-color: var(--heading-background-color);
   color: var(--heading-text-color)
 }
 
@@ -110,32 +98,32 @@ h3 {
 }
 
 .color-grid div {
-  border: solid 1px black;
+  border: solid 1px #060606;
   margin: 1vw;
   text-align: left;
 }
 
 .black {
   background-color: var(--main-text-color);
-  color: white;
+  color: #ffffff;
 }
 
 .white {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .navy {
-  background-color: var(--header-footer-bg-color);
-  color: white;
+  background-color: var(--header-footer-background-color);
+  color: #ffffff;
 }
 
 .blue-green {
-  background-color: var(--nav-bg-color);
-  color: white;
+  background-color: var(--nav-background-color);
+  color: #ffffff;
 }
 
 .green-yellow {
-  background-color: var(--heading-bg-color);
+  background-color: var(--heading-background-color);
   color: #064e40;
 }
 
@@ -149,22 +137,24 @@ h3 {
 
 footer {
   text-align: center;
-  background-color: --header-footer-bg-color;
-  padding: 10px;
-  max-width: 100%;
-  font-family: 'Roboto Sans';
+  background-color: --header-footer-background-color;
+}
+footer div, p {
+  font-family: 'Montserrat', sans-serif;
   font-size: .9rem;
-}
-footer p {
+  line-height: 1.3rem;
   margin: 0;
+  padding: 1vw
 }
 
-#last-modified {
+#lastmod {
+  font-family: "Montserrat Light";
+  font-weight: 300;
   font-style: italic;
-  font-size: smaller;
+  font-size: 1rem;
 }
 
-th {
+table-header {
   background-color: var(--header-heading-color);
   padding: 2vw;
 }
