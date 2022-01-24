@@ -2,17 +2,17 @@
   nav {
       flex-direction: row;
       justify-content: space-around;
-      font-size: 1.5em;
+      font-size: 1.5rem;
   }
   
   h3 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       height: 2em;
-      padding-top: 0.5em;
+      padding-top: 0.5rem;
   }
 
   p, li {
-      font-size: 1.25em;
+      font-size: 1.25rem;
   }
 
   table-header {

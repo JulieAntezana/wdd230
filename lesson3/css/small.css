@@ -139,10 +139,8 @@ footer {
   text-align: center;
   background-color: --header-footer-background-color;
 }
-footer div, p {
+footer div {
   font-family: 'Montserrat', sans-serif;
-  font-size: .9rem;
-  line-height: 1.3rem;
   margin: 0;
   padding: 1vw
 }
