@@ -1,26 +1,25 @@
-@media (min-width: 500px) {
-  nav {
-      flex-direction: row;
+@media only screen and (min-width:35rem) {
+    
+  #logo {
+      width: 2%;
+  }
+  .social {
+      width: 40px;
+  }
+  section:nth-last-of-type(3) {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .first {
+      display: flex;
       justify-content: space-around;
-      font-size: 1.5rem;
+      align-items: center;
   }
-  
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-      font-size: 1.6rem;
-      line-height: 2rem;
-      padding-top: 0.5rem;
+  .head{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      text-align: left;
   }
 
-  p, li {
-      font-size: 1.25rem;
-  }
-
-  .logo-image {
-    width: 425px;
-    height: 145px;
-  }
 }

@@ -12,53 +12,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
     <script defer src="js/dates.js"></script>
+    <script defer src="js/menu.js"></script>
 </head>
 <body>
     <div class="content">
         <header>
-          <div class="body-content">
-                
-            <img class="logo-image" src="images/sc_logo.png" alt="Spring Creek Chamber of Commerce Logo">
-          </div>
-            <h1>Spring Creek Chamber of Commerce</h1>
-            <h2>sctxchamber.org</h2>
+            <div class="first"
+            <div class="logo-image">
+                <a href="index.html"><img class="sclogo" src="images/sclogo.png" alt="Spring Creek Chamber of Commerce Logo"></a>
+            </div>
+            <div class="chamber-name">
+                <h1>Spring Creek</h1> 
+                <h2>Chamber of Commerce</h2>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com" target="blank"><img src="images/twitter.png" alt="Twitter Link"></a>
+                <a href="https://instagram.com" target="blank"><img src="images/instagram.png" alt="Twitter Link"></a>
+                <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link"></a>
+                <a href="https://youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link"></a>
+            </div>
             <span id="aside"></span>
+            <nav>
+                <div id="hamButton" onclick="toggleMenu()" class="">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <!-- <button id="hamButton"><span>&#9776;</span><span>X</span></button> -->
+                <ul id="navBar">
+                    <li><a href="index.html"><div>Home</div></a></li>
+                    <li><a href="discover.html"><div>Discover</div></a></li>
+                    <li><a href="directory.html"><div>Directory</div></a></li>
+                    <li><a href="join.html"><div>Join</div></a></li>
+                    <li><a href="contact.html"><div>Contact</div></a></li>
+                </li>
+            </nav>
         </header>
-        <nav>
-            <a href="index.html"><div>Discover</div></a>
-            <a href="directory.html"><div>Directory</div></a>
-            <a href="join.html"><div>Join</div></a>
-            <a href="contact.html"><div>Contact</div></a>
-        </nav>
         <main>
-          <div class="hero">
-            <p>Hero with site name and call to action</p>
-        </div>
-        <div class="event">
-            <p>Event</p>
-        </div>
-        <div class="weather">
-            <p>Weather</p>
-        </div>
-        <div class="news">
-            <p>News Release</p>
-        </div>
-        <div class="spotlights">
-            <span><p>Spotlight 1</p></span>
-            <span><p>Spotlight 2</p></span>
-            <span>Spotlight 3</span>
-        </div>
-        <div class="join">
-            <p>Join</p>
-        </div>
-
-            
+            <div class="hero">
+                <p>Hero with site name and call to action</p>
+            </div>
+            <div class="event">
+                <p>Event</p>
+            </div>
+            <div class="weather">
+                <p>Weather</p>
+            </div>
+            <div class="news">
+                <p>News Release</p>
+            </div>
+            <div class="spotlights">
+                <span><p>Spotlight 1</p></span>
+                <span><p>Spotlight 2</p></span>
+                <span>Spotlight 3</span>
+            </div>
+            <div class="join">
+                <p>Join</p>
+            </div> 
         </main>
         <footer>
-            <img class="small_logo" src="images/small_logo.png" alt="Spring Creek Chamber of Commerce Logo">
-            <div>&copy;<span id="currentyear"></span>  |  Julie Antezana  |  Texas</div>
-            <p id="lastmod"></p>
-          </footer>
+            <hr id="h-row">
+            <div class="address">
+                <img src="images/sclogo.png" alt="SC Chamber logo">
+                <h3><strong>Contact</strong></h3>
+                <p><strong>Spring Creek</strong></p>
+                <p><strong>Chamber of Commerce</strong></p>
+                <p>21021 Spring Brook Plaza Dr, Suite 320</p>
+                <p>Spring, TX 77379</p>
+            </div>
+            <div class="contact">                
+                <p>
+                    <strong>Phone: </strong><a href="tel:2814404160"> (281) 440-4160</a>
+                    <br>
+                    <strong>Email:</strong><a href="mailto:ChamberInfo@sctxchamber.org"> ChamberInfo@sctxchamber.org</a>
+                    <a href="https://goo.gl/maps/3RyjrrC1KVYgniXUA" target="blank">🗺️ Location Map</a>
+                </p>
+            </div>
+            <hr id="h-row">
+            <div class="project-info">
+                <Julie>&copy;<span id="currentyear"></span> Spring Creek Chamber of Commerce | Julie Antezana | WDD 230 Project </p> 
+                <p id="lastmod"></p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
