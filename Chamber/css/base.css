@@ -61,7 +61,7 @@ header {
   text-align: center;
 }
 
-header, nav, main, footer {
+header, main, footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 1vw;
@@ -78,23 +78,35 @@ nav {
   text-align: center;
 }
 
-nav a:hover {
-  background-color: var(--nav-hover-background-color);
-  color: var(--nav-text-color);
+nav button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer; 
+  color:#6eb43f
 }
 
-.navBar li {
+
+nav ul {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul.open{
+  display: block;
+}
+
+nav ul li {
+  display: none;
   list-style: none;
   padding: 0;
   font-family: "Montserrat";
 }
 
-.navBar li:first-child {
+nav ul li:first-child {
 	display: block;
-}
-
-.navBar li {
-	display: none;
 }
 
 nav ul li a {
@@ -109,26 +121,13 @@ nav ul li a {
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navBar a.ham::before {
+nav ul li a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-text-color);
+}
+
+nav ul li a.ham::before {
 	content: "🍔 ";
-}
-
-nav ul {
-  display: none;
-  padding: 0px;
-  margin: 0px;
-}
-nav ul.open{
-  display: block;
-}
-
-nav button {
-  margin: .2rem 2vw;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer; 
-  color:#6eb43f
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
