@@ -2,8 +2,8 @@
 
     nav {
         
-        grid-column: 3/4;
-        grid-row: 1/2;
+        grid-column: 1;
+        grid-row: 2/3;
         align-self: center;
     }
     nav ul#navBar {
@@ -20,7 +20,7 @@
         display: none;
     }
     .social {
-        grid-column: 4/5;
+        grid-column: 3/5;
         justify-self: center;
     }
     header h1 {
