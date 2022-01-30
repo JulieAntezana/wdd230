@@ -1,5 +1,5 @@
 @media only screen and (min-width: 52rem) {
-    /* nav */
+
     nav {
         
         grid-column: 3/4;
@@ -40,7 +40,7 @@
       background-color: #6EB43F;
       width: 100%;
     }
-    /* main */
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
