@@ -137,8 +137,8 @@ nav ul.open{
 }
 .bar1, .bar2, .bar3 {
   background-color: #6EB43F;
-  width: 40px;
-  margin: 3px;
+  width: 30px;
+  margin: 4px;
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
@@ -151,8 +151,6 @@ nav ul.open{
 .responsive a.ham::before {
 	content: "❌ ";
 }
-
-
 
 
 .sclogo {

@@ -1,10 +1,10 @@
-@media only screen and (min-width:35rem) {
+@media only screen and (min-width:32.5rem) {
     
-  #logo {
+  .sclogo {
       width: 2%;
   }
   .social {
-      width: 40px;
+      width: 120px;
   }
   section:nth-last-of-type(3) {
       display: flex;
@@ -21,5 +21,17 @@
       align-items: center;
       text-align: left;
   }
-
+	.navBar {
+		display: flex;
+	}
+	.navBar li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navBar a {
+		text-align: center;
+	}
+	.navBar li:first-child {
+		display: none;
+	}
 }
