@@ -72,19 +72,10 @@ nav {
 	max-width: 760px;
   background-color: var(--nav-background-color); 
   display: flex;
+  flex: 1 1 auto;
+  padding: 2vw;
   flex-direction: column;
   text-align: center;
-}
-
-nav div {
-  flex: 1 1 auto;
-  padding: 1vw;
-}
-
-nav a {
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 nav a:hover {
@@ -106,12 +97,13 @@ nav a:hover {
 	display: none;
 }
 
-.navBar a {
+nav ul li a {
 	display: block;
-	padding: 0.75rem;
+	padding: 0.8rem, 2vw;
 	text-align: left;
 	text-decoration: none;
 	color: #ffffff;
+  border: top 1px solid rgba(0,0,0,0.5);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -129,16 +121,14 @@ nav ul {
 nav ul.open{
   display: block;
 }
-.hamButton {
-  margin: auto;
-  padding: 5px;
+
+nav button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
   cursor: pointer; 
-  display: table;
-}
-.bar1, .bar2, .bar3 {
-  background-color: #6EB43F;
-  width: 30px;
-  margin: 4px;
+  color:#6eb43f
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
@@ -152,12 +142,10 @@ nav ul.open{
 	content: "❌ ";
 }
 
-
 .sclogo {
 width: 156px;
 height: 140px;
 }
-
 
 h3 {
   padding: 0.25em;
@@ -198,6 +186,7 @@ footer h3 {
 .project-info {
   background-color:#6eb43f; 
 }
+
 #lastmod {
   font-family: "Montserrat Light";
   font-weight: 300;
