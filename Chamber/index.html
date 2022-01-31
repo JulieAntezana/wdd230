@@ -18,8 +18,7 @@
 <body>
     <div class="content">
         <header>
-            <div class="first"
-            <div class="logo-image">
+            <div class="logo">
                 <a href="index.html"><img class="sclogo" src="images/sclogo.png" alt="Spring Creek Chamber of Commerce Logo"></a>
             </div>
             <div class="chamber-name">
@@ -31,18 +30,21 @@
                 <a href="https://instagram.com" target="blank"><img src="images/instagram.png" alt="Twitter Link"></a>
                 <a href="https://linkedin.com" target="blank"><img src="images/linkedin.png" alt="Linkedin Link"></a>
                 <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link"></a>
-                <a href="https://youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link"></a>
+                <!-- <a href="https://youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link"></a> -->
             </div>
             <span id="aside"></span>
             <nav>
-                <button class="hamButton"><span>&#9776;</span><span>X</span></button>
-                <ul class="navBar">
-                    <li><a class="ham" href="index.html"><div>Home</div></a></li>
+                <button id="hamButton" class>
+                    <span>&#9776;</span>
+                    <span>X</span>
+                </button>
+                <ul id="navBar" class>
+                    <li><a href="index.html"><div>Home</div></a></li>
                     <li><a href="discover.html"><div>Discover</div></a></li>
                     <li><a href="directory.html"><div>Directory</div></a></li>
                     <li><a href="join.html"><div>Join</div></a></li>
                     <li><a href="contact.html"><div>Contact</div></a></li>
-                </li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -53,17 +55,16 @@
                 <p>Event</p>
             </div>
             <div class="weather">
-                <p>Weather</p>
+                <p><span>Weather</span></p>
             </div>
             <div class="news">
                 <p>News Release</p>
             </div>
-            <div>
-                <p class="spotlights">
-                    <p><span>Spotlight 1</span></p>
-                    <p><span>Spotlight 2</span></p>
-                    <p><span id="spotlight3">Spotlight 3</span></p>
-                </p>
+            <div class="spotlights">
+                <p><span>Spotlight 1</span></p>
+                <p><span>Spotlight 2</span></p>
+                <p><span id="spotlight3">Spotlight 3</span></p>
+        
             </div>
             <div class="join">
                 <p>Join</p>
@@ -89,7 +90,9 @@
             </div>
             <hr id="h-row">
             <div class="project-info">
-                <Julie>&copy;<span id="currentyear"></span> Spring Creek Chamber of Commerce | Julie Antezana | WDD 230 Project </p> 
+                <p>&copy;<span id="currentyear"></span> Spring Creek Chamber of Commerce</p>
+                <p><strong> Julie Antezana </strong> </p>
+                <p> WDD 230 Project </p>  
                 <p id="lastmod"></p>
             </div>
         </footer>

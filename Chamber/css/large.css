@@ -1,26 +1,23 @@
-@media only screen and (min-width: 52rem) {
+@media only screen and (min-width: 64rem) {
 
     nav {
-        
         grid-column: 1;
         grid-row: 2/3;
         align-self: center;
     }
-    nav ul#navBar {
+    nav ul {
         display: flex;
     }
     nav ul li a {
-        border: none;
+        padding: .5rem 1rem;
     }
-    header {
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-    }
+  
     #hamButton {
         display: none;
     }
     .social {
         grid-column: 3/5;
+        grid-template-rows: 1;
         justify-self: center;
     }
     header h1 {
@@ -29,9 +26,7 @@
     header h2 {
         font-size: 16px;
     }
-    .logo img {
-        width: 120px;
-    }
+
     .social img {
         width: 45px;
     }
