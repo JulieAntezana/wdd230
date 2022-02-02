@@ -6,7 +6,7 @@
     }
     
     .sclogo {
-        width: 100%;
+        width: 100;
         grid-template-columns: 1;
         grid-template-rows: 1;
     }
@@ -23,12 +23,12 @@
         display: none;
     }
 
-    nav ul {
+    /* nav ul {
         display: flex;
         justify-content: center;
         margin-left: 2vw;
         border-left: 1px solid rgba(0,0,0,0.3);
-    }
+    } */
 
     nav ul li a {
         border: none;
@@ -51,4 +51,58 @@
         justify-content: space-around;
         align-items: center;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    #h-row {
+        grid-column: 1/6;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    footer img {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .address {
+        min-width: none;
+        margin: 1em;
+        grid-column: 3/6;
+        grid-row: 2;
+        text-align: left;
+    }
+
+    footer h3 {
+        color: #6EB43F;
+      }
+      
+      .contact a {
+        color: #6EB43F;
+        font-size: .8rem;
+        text-decoration: none;
+      }
+      
+      .contact a:hover {
+        color: #FFFFFF;
+        font-size: .8rem;
+        text-decoration: none;
+      }
+
+      .project-info {
+        background-color:#6eb43f;
+        grid-column: 1/6;
+        grid-row: 5;
+      }
+      
+      #lastmod {
+        font-family: "Montserrat Light";
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1rem;
+      }
+
 }
