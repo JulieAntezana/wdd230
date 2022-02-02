@@ -19,9 +19,9 @@
 
     }
 
-    nav button {
-        display: none;
-    }
+    /* nav button {
+        display: ;
+    } */
 
     /* nav ul {
         display: flex;
@@ -52,6 +52,24 @@
         align-items: center;
     }
 
+    .join {
+        display: none;
+    }
+    
+    .spotlights {
+        padding-bottom: 1em
+    }
+    
+    .spotlights p:nth-child(3) {
+        display: none;
+    }
+    .spotlights p {
+        border: 1px solid #444;
+        margin: 0;
+        padding: 1em;
+        padding-bottom:200px
+    }
+    
     footer {
         display: grid;
         grid-template-columns: 2fr 3fr;

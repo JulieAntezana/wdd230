@@ -1,8 +1,8 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 50rem) {
 
     nav {
-        grid-column: 1;
-        grid-row: 2/3;
+        grid-column: 1/5;
+        grid-row: 3/4;
         align-self: center;
     }
     nav ul {
@@ -34,12 +34,14 @@
     #aside {
       background-color: #6EB43F;
       width: 100%;
+      grid-row: 2/3;
     }
 
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: .5em;
+        margin: 0 auto;
     }
 
     .event {
@@ -63,6 +65,7 @@
         grid-row: 2/3;
     }
     .join {
+        display: block;
         grid-column: 1/2;
         grid-row: 3/4;
     }

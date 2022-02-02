@@ -31,7 +31,7 @@ header {
 header, main, footer {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1vw;
+  /* padding: 1vw; */
 }
 
 header h1 {
@@ -103,7 +103,7 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
   margin: 0px;
 }
 
@@ -162,7 +162,7 @@ main div {
 }
 
 .join {
-  display: none;
+  display: block;
 }
 
 .spotlights {
