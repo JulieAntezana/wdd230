@@ -1,5 +1,4 @@
 @media only screen and (min-width: 50rem) {
-
     nav {
         grid-column: 1/5;
         grid-row: 3/4;
@@ -26,7 +25,6 @@
     header h2 {
         font-size: 16px;
     }
-
     .social img {
         width: 45px;
     }
@@ -36,14 +34,12 @@
       width: 100%;
       grid-row: 2/3;
     }
-
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: .5em;
         margin: 0 auto;
     }
-
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -77,3 +73,4 @@
         display: block;
     }
   }
+
