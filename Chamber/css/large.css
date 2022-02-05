@@ -18,7 +18,7 @@
     }
     .social {
         grid-column: 3/5;
-        grid-template-rows: 1;
+        grid-template-rows: 1/2;
         justify-self: center;
     }
     header h1 {

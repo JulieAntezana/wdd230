@@ -2,7 +2,7 @@
 
     header {
         display: grid;
-        grid-template-columns: 1fr 1 fr 1fr;
+        grid-template-columns: 1fr 1fr fr 1fr;
     }
     
     header h1 {
@@ -143,7 +143,6 @@
         grid-row: 2;
     }
     .address {
-        min-width: none;
         margin: 1em;
         grid-column: 3/6;
         grid-row: 2;

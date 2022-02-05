@@ -12,7 +12,7 @@
   --font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-color: var(#ffffff);
+  background-color:#FFFFFF;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.3rem;
@@ -74,7 +74,6 @@ h3 {
 }
 .social {
   grid-column: 3/4;
-  align-self: right;
   margin: 20px;
 }
 .social img {
@@ -106,7 +105,7 @@ nav ul {
 }
 nav ul li a {
   display: block;
-  padding: 0.8rem, 2vw;
+  padding: 0.8rem 2vw;
   text-decoration: none;
   text-align: center;
   color: #ffffff;
