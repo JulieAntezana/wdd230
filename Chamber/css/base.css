@@ -138,33 +138,133 @@ nav ul.open{
 #hamButton.open span:nth-child(2) {
   display: block;
 }
+
 main {
-  margin: 1em;
   display: grid;
   grid-gap: 1em;
-  color: #191924;
+  color: #FFFFFF;
 }
 main div {
-  background-color: #ffffff;
-  padding: 1em;
-  padding-bottom: 100px;
-  border: 1px solid #444;
+  background-color: #03045e;
+  text-align: center;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.20);
 }
-.join {
-  display: block;
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: transparent;
 }
-.spotlights {
-  padding-bottom: 1em
+.hero h2 {
+  color: #FFFFFF;
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
-.spotlights p:nth-child(3) {
+.hero img {
+  width: 100%;
+}
+.hero span:nth-child(2) {
   display: none;
 }
-.spotlights p {
-  border: 1px solid #444;
-  margin: 0;
-  padding: 1em;
-  padding-bottom:200px
+.hero span:nth-child(3) {
+  display: none;
 }
+#joinButton {
+  color:#FFFFFF;
+  background-color: #6eb43f;
+  border-color: #FFFFFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  font-size: 16px;
+  bottom: 40px;
+  right: 15px;
+  border-radius: 8px;
+}
+#join2Button {
+  color:#FFFFFF;
+  background-color: #6eb43f;
+  border-color: #FFFFFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  bottom: 40px;
+  right: 15px;
+  border-radius: 8px;
+}
+.hero button:hover {
+  font-size: 18px;
+}
+h2 {
+  color: #6EB43F;;
+  text-shadow: 2px 2px #191924;
+}
+
+.event {
+  text-align: center;
+  padding-bottom: 2em;
+  padding: 1em;
+}
+.event h3 {
+  color: #FFFFFF;
+}
+
+.weather {
+  width: 300px;
+  justify-self: center;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+}
+.weather p {
+  font-size: 25px;
+}
+.weather img {
+  margin-left: 1em;
+  float: left;
+}
+.weather span:nth-child(1) {
+  font-size: 16px;
+  border-top: #FFFFFF;
+}
+.weather span:nth-child(2) {
+  font-size: 16px;
+}
+
+.news p {
+  padding: 1.5em;
+}
+
+.spotlights {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.spotlights a {
+  margin-left: 2em;
+}
+.sign-shop {
+  grid-row: 1/2;
+  padding: .5em;
+
+}
+.health {
+  grid-row: 2/3;
+  padding: .5em;
+}
+.moover {
+  display: none;
+}
+
+.contact1, 
+.contact2,
+.contact3 {
+  padding: .5em;
+}
+
 #h-row {
   background-color:#6EB43F;
   height: 3px;

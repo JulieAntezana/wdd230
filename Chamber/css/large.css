@@ -33,15 +33,18 @@
       width: 100%;
       grid-row: 2/3;
     }
+    
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: .5em;
-        margin: 0 auto;
+        grid-gap: .8em;
+        margin: auto;
+        max-width: 1200px;
     }
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
+        padding-bottom: 0;
     }
     .hero {
         grid-column: 2/4;
@@ -50,17 +53,29 @@
     .spotlights {
         grid-column: 4/5;
         grid-row: 1/4;
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
     .spotlights p {
         margin: 0.3em;
+    }
+    .sign-shop {
+        grid-row: 1/2;
+    }
+    .health {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .moover {
+        display: block;
+        grid-row: 3/4;
     }
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
     }
     .join {
-        display: block;
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -68,8 +83,48 @@
         grid-column: 2/4;
         grid-row: 3/4;
     }
-    .spotlights p:nth-child(3) {
+    /* footer */
+    #lastinfo p {
+        margin-top: 14px;
+    }
+    .address p {
+        margin-top: 1.5em;
+    }
+    .contact p {
+        margin-top: 2em;
+    }
+    /* hero img */
+    .hero span:nth-child(2) {
+        display: none;
+    }
+    .hero span:nth-child(3) {
         display: block;
     }
-  }
-
+    .hero h2 strong{
+        font-size: 28px;
+    }
+    #joinButton {
+        bottom: 40px;
+        right: 15px;
+        font-size: 25px;
+    }
+    /* spotlights */
+    .spotlights img {
+        max-width: 100px;
+    }
+    .moover {
+        display: block;
+        padding: .5em;
+    }
+    /* event */
+    .event p {
+        padding: .5em;
+    }
+    .event h2 {
+        padding: 0;
+    }
+    /* join */
+    .join p {
+        padding: 1em;
+    } 
+}   
