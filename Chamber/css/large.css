@@ -1,9 +1,11 @@
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 60rem) {
     nav {
+        background-color: #064e40;
         grid-column: 1/5;
         grid-row: 3/4;
         align-self: center;
     }
+
     nav ul {
         display: flex;
     }
@@ -20,13 +22,10 @@
         justify-self: center;
     }
     header h1 {
-        font-size: 20px;
+        font-size: 2rem;
     }
     header h2 {
-        font-size: 16px;
-    }
-    .social img {
-        width: 45px;
+        font-size: 1.2rem;
     }
     
     #aside {

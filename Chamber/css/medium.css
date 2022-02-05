@@ -1,21 +1,29 @@
 @media only screen and (min-width:35rem) {
-    
+
     header {
         display: grid;
         grid-template-columns: 1fr 1 fr 1fr;
     }
     
+    header h1 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+      }
+
     .sclogo {
-        width: 100;
-        grid-template-columns: 1;
-        grid-template-rows: 1;
+        width: 100px;
     }
+
     .social {
         grid-row: inherit;
         display: flex;
         align-content: center;
         width: 120px;
     }
+
+    .social img {
+        width: 35px;
+      }
     /* nav button {
         display: ;
     } */
@@ -28,6 +36,7 @@
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
+        border-top: 1px solid rgba(0,0,0,0.3);
     }
   
     nav ul li a {
@@ -89,17 +98,20 @@
       
       .contact a {
         color: #6EB43F;
-        font-size: .8rem;
+        font-size: 1rem;
         text-decoration: none;
       }
       
       .contact a:hover {
         color: #FFFFFF;
-        font-size: .8rem;
+        font-size: 0.8rem;
         text-decoration: none;
       }
       .project-info {
+        display: flex;
+        justify-content: space-around;
         background-color:#6eb43f;
+        font-size: 0.8rem;       
         grid-column: 1/6;
         grid-row: 5;
       }
@@ -108,7 +120,7 @@
         font-family: "Montserrat Light";
         font-weight: 300;
         font-style: italic;
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
 }
 

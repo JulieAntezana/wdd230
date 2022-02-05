@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Julie Antezana">
     <meta name="description" content="Home page for Spring Creek Chamber of Commerce Website Planning Document for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Spring Creek Chamber of Commerce</title>    
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -13,10 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
     <script defer src="js/dates.js"></script>
+    <script defer src="js/banner.js"></script>
     <script defer src="js/menu.js"></script>
 </head>
 <body>
     <div class="content">
+        <div class="banner" id="banner" style="display: none">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
         <header>
             <div class="logo">
                 <a href="index.html"><img class="sclogo" src="images/sclogo.png" alt="Spring Creek Chamber of Commerce Logo"></a>
@@ -91,7 +96,7 @@
             </div>
             <div class="project-info">
                 <p>&copy;<span id="currentyear"></span> Spring Creek Chamber of Commerce</p>
-                <p><strong> Julie Antezana </strong> | WDD 230 Project </p>  
+                <p><strong> |   Julie Antezana </strong>   |   WDD 230 Project   |  </p>  
                 <p id="lastmod"></p>
             </div>
         </footer>

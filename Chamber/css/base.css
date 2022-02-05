@@ -17,16 +17,29 @@ body {
   font-size: 16px;
   line-height: 1.3rem;
 }
+
+.banner {
+  text-align: center;
+  background-color: #03045e;
+  margin: 0 auto;
+  padding: .5em;
+  max-width: 100vw;
+}
+
+.banner p {
+  color:#FFFFFF;
+}
+
 header {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
-  padding: 1em;
+  /* padding: 1em; */
   align-items: center;
   background-color: var(--header-footer-background-color);
   color: var(--header-footer-text-color);
 }
 header, main, footer {
-  max-width: 960px;
+  max-width: 100vw;
   margin: 0 auto;
   /* padding: 1vw; */
 }
@@ -77,11 +90,11 @@ nav button {
   margin: .2rem 2vw;
   background: transparent;
   border: none;
-  font-size: 2rem; 
+  font-size: 1.2rem; 
   color:#6EB43F;
 }
 nav {
-  background-color: #064e40;
+  background-color: #03045e;
   grid-column: 1/5; 
 }
 nav ul {
