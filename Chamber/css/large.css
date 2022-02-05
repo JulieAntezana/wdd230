@@ -83,8 +83,8 @@
         grid-column: 2/4;
         grid-row: 3/4;
     }
-    /* footer */
-    #lastinfo p {
+    
+    #lastmod p {
         margin-top: 14px;
     }
     .address p {
@@ -93,7 +93,7 @@
     .contact p {
         margin-top: 2em;
     }
-    /* hero img */
+    
     .hero span:nth-child(2) {
         display: none;
     }
@@ -108,7 +108,7 @@
         right: 15px;
         font-size: 25px;
     }
-    /* spotlights */
+  
     .spotlights img {
         max-width: 100px;
     }

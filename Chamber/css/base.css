@@ -172,7 +172,7 @@ main div {
 #joinButton {
   color:#064e40;
   background-color: #6eb43f;
-  border-color: #FFFFFF;
+  border-color: #064e40;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
@@ -184,9 +184,9 @@ main div {
   border-radius: 8px;
 }
 #join2Button {
-  color:#FFFFFF;
+  color:#064e40;
   background-color: #6eb43f;
-  border-color: #FFFFFF;
+  border-color: #064e40;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
@@ -201,7 +201,7 @@ main div {
 }
 h2 {
   color: #6EB43F;;
-  text-shadow: 2px 2px #191924;
+  text-shadow: 2px 2px #064e40;
 }
 
 .event {
@@ -221,8 +221,6 @@ h2 {
 .weather {
   width: 300px;
   justify-self: center;
-  /* display: grid;
-  grid-template-columns: 1fr; */
 }
 .weather p {
   font-size: 25px;
@@ -287,18 +285,14 @@ footer div {
   margin: 0;
   padding: 1vw;
   text-decoration: none;
+  color:#FFFFFF
 }
 footer img {
   width: 213px;
   height:83px;
   margin: 0.7em; 
 }
-/* #footer-logo {
-  align-self: center;
-}
-#footer-logo-name {
-  text-align: center;
-} */
+
 .contact a {
   color: #6EB43F;
   font-size: .8rem;
