@@ -6,6 +6,9 @@ const showBanner = () => {
     banner.style.display = "block";
 };
 
-if (day == 1) OR (day == 2); {
+if (day == 1) {
+    showBanner();
+} 
+else if (day == 2); {
     showBanner();
 }

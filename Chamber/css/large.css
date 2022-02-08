@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 72rem) {
     nav {
         background-color: #064e40;
         grid-column: 1/5;
@@ -39,7 +39,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: .8em;
         margin: auto;
-        max-width: 1200px;
+        max-width: 100%;
     }
     .event {
         grid-column: 1/2;
@@ -62,14 +62,17 @@
     }
     .sign-shop {
         grid-row: 1/2;
+        background-color: rgba(0,0,0,0.02);
     }
     .health {
         grid-row: 2/3;
         grid-column: 1/2;
+        background-color: rgba(0,0,0,0.02);
     }
     .moover {
         display: block;
         grid-row: 3/4;
+        background-color: rgba(0,0,0,0.02);
     }
     .weather {
         grid-column: 1/2;
@@ -92,13 +95,6 @@
     }
     .contact p {
         margin-top: 2em;
-    }
-    
-    .hero span:nth-child(2) {
-        display: none;
-    }
-    .hero span:nth-child(3) {
-        display: block;
     }
     .hero h2 strong{
         font-size: 28px;

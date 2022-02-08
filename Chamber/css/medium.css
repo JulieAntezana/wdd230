@@ -57,22 +57,14 @@
         grid-row: 1/2;
     }
     .hero h2 strong{
-        font-size: 24px;
+        font-size: 2rem;
     }
     #joinButton {
-        font-size: 20px;
+        font-size: 1.1rem;
     }
-
-    .hero span:nth-child(1) {
-        display: none;
-    }
-    .hero span:nth-child(2) {
+    .hero {
         display: block;
     }
-    .hero h2 strong {
-        font-size: 25px;
-    }
-    
     .news {
         grid-column: 1/4;
         grid-row: 2/3;
@@ -98,8 +90,9 @@
         grid-row: 4/5;
     }
     #join2button {
-        color:#F7F7F7;
+        color: #064e40;
         background-color: #6EB43F;
+        border-color: #064e40;
 
         border-color: #F7F7F7;
         padding: 15px 25px;

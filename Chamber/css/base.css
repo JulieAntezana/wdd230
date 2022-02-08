@@ -83,6 +83,7 @@ h3 {
   background-color: #6eb43f;
   grid-column: 1/4;
   text-align: center;
+  color:#064e40;
   max-height: 1.5rem;
 }
 nav button {
@@ -163,12 +164,6 @@ main div {
 .hero img {
   width: 100%;
 }
-.hero span:nth-child(2) {
-  display: none;
-}
-.hero span:nth-child(3) {
-  display: none;
-}
 #joinButton {
   color:#064e40;
   background-color: #6eb43f;
@@ -187,21 +182,16 @@ main div {
   color:#064e40;
   background-color: #6eb43f;
   border-color: #064e40;
-  padding: 10px 15px;
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
-  font-size: 16px;
-  bottom: 40px;
-  right: 15px;
   border-radius: 8px;
 }
 .hero button:hover {
   font-size: 18px;
+  color: #FFFFFF;
 }
 h2 {
   color: #6EB43F;;
-  text-shadow: 2px 2px #064e40;
 }
 
 .event {
@@ -244,6 +234,7 @@ h2 {
 .spotlights {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: rgba(0,0,0,0.20)
 }
 .spotlights a {
   margin-left: 2em;
@@ -280,15 +271,15 @@ footer {
 }
 footer div {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
-  line-height: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
   margin: 0;
   padding: 1vw;
   text-decoration: none;
   color:#FFFFFF
 }
 footer img {
-  width: 213px;
+  width: 250px;
   height:83px;
   margin: 0.7em; 
 }
@@ -305,6 +296,7 @@ footer img {
 }
 .project-info {
   background-color:#6eb43f; 
+  color:#064e40;
 }
 #lastmod {
   font-family: "Montserrat Light";
