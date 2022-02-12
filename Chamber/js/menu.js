@@ -1,6 +1,6 @@
-function toggleMenu () {
-	document.getElementById("navBar").classList.toggle("open");
-	document.getElementById("hamButton").classList.toggle("open");
+function toggleMenu() {
+  var para = document.getElementById("hamButton");
+  para.classList.toggle("rotate-icon");
+  document.getElementById("navBar").classList.toggle("open");
+  document.getElementById("hamButton").classList.toggle("open");
 }
-const x = document.getElementById("hamButton");
-x.onclick = toggleMenu
