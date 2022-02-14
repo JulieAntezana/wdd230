@@ -13,7 +13,7 @@
 }
 body {
   /* background-color:#FFFFFF; */
-  background: radial-gradient(#03045e, rgba(37, 59, 83, 0.));
+  background: radial-gradient(#03045e, rgba(37, 59, 83, 0.5));
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.3rem;
