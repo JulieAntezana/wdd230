@@ -17,6 +17,7 @@
     <script defer src="js/dates.js"></script>
     <script defer src="js/banner.js"></script>
     <script defer src="js/menu.js"></script>
+    <script defer src="js/weather.js"></script>
 </head>
 <body>
     <div class="content">
@@ -25,7 +26,7 @@
         </div>
         <header>
             <div class="logo">
-                <a href="index.html"><img class="sclogo" src="images/sclogo.png" alt="Spring Creek Chamber of Commerce Logo"></a>
+                <a href="index.html"><img class="sclogo" src="images/sclogo.webp" alt="Spring Creek Chamber of Commerce Logo"></a>
             </div>
             <div class="chamber-name">
                 <h1>Spring Creek</h1> 
@@ -54,7 +55,10 @@
         </header>
         <main>
             <div class="hero">
-                <span><img src="images/wdd230-org.webp" alt="Spring Creek Shops"></span>
+                <span><img srcset="images/wdd230-org320.webp 320w,
+                images/wdd230-org640.webp 640w,
+                images/wdd230-org1280.webp 1280w" alt="Woman sitting at an office table across from a man who is using a laptop" sizes="100vw">
+                </span>
                 <h2><strong>Welcome to Spring Creek</strong></h2>
                 <button id="joinButton"> Join the Chamber</button>
             </div>
@@ -65,12 +69,12 @@
             </div>
             <div class="weather">
                 <h2>Weather</h2>
-                <img src="images/weather.png" alt="Sun behind a cloud.">
-                <h3>33° C</h3>
+                <img src="images/weather.png" alt="Sun partially behind a cloud.">
+                <h3><span id="temp">33</span>&#176; F</h3>
                 <h3>Partly Cloudy</h3>
                 <br>
-                <h3><span>Wind Speed:     2.5 Km/h</span> </h3>
-                <h3><span>Wind Chill:     N/A</span></h3>
+                <h3>Wind Speed: <span id="windspeed"> 2 </span> mph </h3>
+                <h3>Wind Chill: <span> N/A </span></h3>
             </div>
             <div class="news">
                 <h2>Management District News</h2>
