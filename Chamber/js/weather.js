@@ -1,4 +1,4 @@
-const temp = parseFloat(document.querySelector("#degrees").innerHTML)
+const temp = parseFloat(document.querySelector("#temp").innerHTML)
 const windspeed = parseFloat(document.querySelector("#windspeed").innerHTML)
 
 
