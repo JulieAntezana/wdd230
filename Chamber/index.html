@@ -55,19 +55,16 @@
         </header>
         <main>
             <div class="hero">
+                <picture>
+                    <source media="(min-width:73rem)" srcset="images/wdd230-large.webp">
+                    <source media="(min-width:32.5rem)" srcset="images/wdd230-med.webp">
+                    <img src="images/wdd230-small.webp" alt="Woman sitting at an office table across from a man who is using a laptop">
+                </picture>
                 <!-- <picture>
-                    <source media="(min-width:60rem)" srcset="images/wdd230-org1280.webp">
-                    <source media="(min-width:32.5rem)" srcset="images/wdd230-org640.webp">
-                    <source media="(min-width:32.5rem)" srcset="images/wdd230-org640.webp">
-                    <img src="images/wdd230-org320.webp" alt="Woman sitting at an office table across from a man who is using a laptop" style="width:auto;">
+                    <img src="images/wdd230-small.webp" alt="Woman sitting at an office table across from a man who is using a laptop" 
+                    srcset="images/wdd230-large.webp 1x, images/wdd230-med.webp 2x; 
+                    images/wdd230-small.webp 3x">
                 </picture> -->
-                <span><img srcset="images/wdd230-org1280.webp 1280w,
-                images/wdd230-org640.webp 640w,
-                images/wdd230-org320.webp 320w"
-                sizes="100vw"
-                src="images/wdd230-org320.webp 320w"
-                alt="Woman sitting at an office table across from a man who is using a laptop">
-                </span>
                 <h2><strong>Welcome to Spring Creek</strong></h2>
                 <button id="joinButton">Join the Chamber</button>
             </div>
@@ -126,20 +123,24 @@
         </main>
         <footer>
             <hr id="h-row">
-            <div id="footer-logo">
-                <img src="images/sc-card.png" alt="SC Chamber logo">
+            <div>
+                <figure class="footer-logo">
+                    <img src="images/sclogo.webp" alt="SC Chamber logo">
+                </figure>
             </div>
-            <!-- <div id=footer-logo-name>
+            <div class="sc-coc">
                 <h1>SPRING</h1>
                 <h1>CREEK</h1>
                 <h4>Chamber of Commerce</h4>
-            </div> -->
+            </div>
             <div class="address">
                 <h3><strong>Contact</strong></h3>
                 <p><strong>Spring Creek</strong></p>
                 <p><strong>Chamber of Commerce</strong></p>
                 <p>21021 Spring Brook Plaza Dr, Suite 320</p>
                 <p>Spring, TX 77379</p>         
+            </div>
+            <div class="contact">
                 <p class="contact"><strong>Phone: </strong><a href="tel:2814404160"> (281) 440-4160</a></p>
                 <p class="contact"><strong>Email:</strong><a href="mailto:ChamberInfo@sctxchamber.org"> ChamberInfo@sctxchamber.org</a></p>
                 <p class="contact"><a href="https://goo.gl/maps/3RyjrrC1KVYgniXUA" target="blank">🗺️ Location Map</a></p>
