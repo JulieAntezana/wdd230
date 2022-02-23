@@ -9,7 +9,7 @@ table {
   text-align:center;
   padding: 2rem;
   line-height: 2rem;
-  box-shadow: 5px 5px 20px #4a697c;
+  box-shadow: 5px 10px 10px #628ca6;
 }
 
 tr:first-child th {
@@ -35,6 +35,10 @@ tbody {
 
 tbody tr:nth-child(even) {
   background-color: #e7ffed;
+}
+
+.black-friday {
+  font-style:italic;
 }
 
 .nov-sales-goal {
