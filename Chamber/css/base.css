@@ -280,7 +280,7 @@ h2 {
   background-color:#6EB43F;
   height: 3px;
 }
-footer {
+/* footer {
   display: block;
   background-color: var(--header-footer-background-color);
   color: var(--header-footer-text-color);
@@ -325,10 +325,102 @@ footer h1 {
 .project-info {
   background-color:#6eb43f; 
   color:#064e40;
-}
+} */
 #lastmod {
   font-family: "Montserrat Light";
   font-weight: 300;
   font-style: italic;
   font-size: 1rem;
 }
+
+footer {
+	background-color: #eee;
+	display: grid;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem;
+	text-align: center;
+}
+
+.footer-logo {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.address {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	line-height: 0.5rem;
+}
+
+.contact {
+	grid-column: 1/2;
+	grid-row: 3/4;
+	line-height: 0.5rem;
+}
+
+.project-info {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	letter-spacing: 1.5pt;
+	text-align: center;
+}
+
+/******************/
+.footerlogo img {
+	width: 150px;
+	height: auto;
+}
+
+.sc-coc {
+	margin-left: 1rem;
+}
+
+.sc-coc p {
+	margin: 0;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.title2 {
+	font-weight: 700;
+	letter-spacing: 0.15rem;
+}
+
+.nodecoration {
+	text-decoration: none;
+}
+
+.smaller {
+	font-size: smaller;
+}
+
+@media (min-width: 32.5em) {
+	.footer-logo {
+		grid-column: 1/3;
+		grid-row: 1/2;
+	}
+
+	.address {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	.contact {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+	.project-info {
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+}
+
+

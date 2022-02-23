@@ -10,6 +10,11 @@ body {
   line-height: 1.5rem;
 }
 
+body .lazyload {
+  max-width: 300px;
+
+
+}
 header {
   max-width: 100%;
   background-color: #9ea088; /* artichoke green */
