@@ -5,7 +5,7 @@ th, td {
 table {
   font-family: 'Ubuntu', sans-serif;
   border-collapse: collapse;
-  width: 25%;
+  margin: 0 auto;
   text-align:center;
   padding: 2rem;
   line-height: 2rem;
@@ -17,14 +17,15 @@ tr:first-child th {
   color: black;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: .4rem;
+  padding: .5rem;
 }
 
 th {
   background-color: #628ca6;
   color: white;
   font-size: 1.1rem;
-  padding: .1rem;
+  padding-left:1.4rem;
+  padding-right:1.4rem;
 }
 
 tbody {
