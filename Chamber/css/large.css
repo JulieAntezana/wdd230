@@ -131,7 +131,18 @@
     .join p {
         padding: 1em;
     } 
-
+    .contact a {
+        color: #6EB43F;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-decoration: none;
+      }
+      .contact a:hover {
+        color: #FFFFFF;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-decoration: none;
+      }
 	.footer-logo {
 		grid-column: 1/2;
 		grid-row: 1/2;
