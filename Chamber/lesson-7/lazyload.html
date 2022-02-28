@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Julie Antezana">
-    <meta name="description" content="Lazy-loading image assignment for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>Lazy-load</title>  
-    <link rel="stylesheet" href="../css/normalize.css">  
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/medium.css">
-    <link rel="stylesheet" href="../css/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
-    <script defer src="../js/lazyload.js"></script>
-  </head>      
-  <body>
-    <header class="lazyload">
-      <h1>W07 Activity: Progressive Loading of Images</h1>
-    </header>
-    <main class="lazyload">
-      <picture id="picture">
-        <img src="images/spanish_moss.webp" alt="spanish moss hanging from a tree branch">
-        <figcaption>Spanish Moss at TC Jester Blvd.</figcaption>
-      </picture>
-    </main>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Julie Antezana">
+  <meta name="description"
+    content="Lazy-loading image assignment for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Lazy-load</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <script defer src="js/lazyload.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>W07 Activity: Progressive Loading of Images</h1>
+  </header>
+  <main class="lazyload">
+    <picture id="picture">
+      <img src="images/placeholder.webp" data-src="images/spanish_moss.webp"
+        alt="spanish moss hanging from a tree branch">
+      <figcaption>Spanish Moss at TC Jester Blvd.</figcaption>
+    </picture>
+    <picture id="picture">
+      <img src="images/placeholder.webp" data-src="images/azaleas.webp"
+        alt="Hot pink azaleas bloom in front of a fence.">
+      <figcaption>Azaleas in Spring Creek gardens.</figcaption>
+    </picture>
+    <picture id="picture">
+      <img src="images/placeholder.webp" data-src="images/longhorns.webp"
+        alt="Two longhorn bulls standing near a fence">
+      <figcaption>The Texas Longhorn</figcaption>
+    </picture>
+    <picture id="picture">
+      <img src="images/placeholder.webp" data-src="images/peace_rose.webp"
+        alt="Image of pink rose bloom close up">
+      <figcaption>The Peace Rose smells sweetest.</figcaption>
+    </picture>
+    <picture id="picture">
+      <img src="images/placeholder.webp" data-src="images/creek.webp"
+        alt="Image of Spring Creek">
+      <figcaption>Spring Creek</figcaption>
+    </picture>
+    <picture id="picture">
+      <img src="images/placeholder.webp" data-src="images/sunset.webp"
+        alt="Sunset at the market">
+      <figcaption>Sunset at Spring Creek market.</figcaption>
+    </picture>
+  </main>
+</body>
+
+</html>
