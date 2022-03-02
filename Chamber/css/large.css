@@ -46,6 +46,7 @@
         grid-row: 1/2;
         padding-bottom: 0;
         margin-top: 1em;
+        border: none;
     }
     .hero {
         grid-column: 2/4;
@@ -70,21 +71,25 @@
     }
     .sign-shop {
         grid-row: 1/2;
-        background-color: rgba(0,0,0,0.02);
+        border-bottom: solid rgba(37, 59, 83, 0.8);
     }
     .health {
         grid-row: 2/3;
         grid-column: 1/2;
-        background-color: rgba(0,0,0,0.02);
+        border-left: none;
+        border-bottom: solid rgba(37, 59, 83, 0.8);
     }
     .moover {
         display: block;
         grid-row: 3/4;
-        background-color: rgba(0,0,0,0.02);
+        padding: .5em;
+        border-bottom: solid rgba(37, 59, 83, 0.8);
     }
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
+        border: none;
+        border-top: solid rgba(37, 59, 83, 0.8);
     }
     .join {
         grid-column: 1/2;
@@ -117,32 +122,29 @@
         max-width: 100px;
         height: 100%;
     }
-    .moover {
-        padding: .5em;
-    }
-    
+
     .event p {
         padding: .5em;
     }
     .event h2 {
         padding: 0;
     }
-   
+    
+    .join {
+        border-bottom: solid rgba(37, 59, 83, 0.8);
+    }
+
     .join p {
         padding: 1em;
     } 
     .contact a {
-        color: #6EB43F;
         font-size: 1rem;
         line-height: 1.2rem;
-        text-decoration: none;
       }
-      .contact a:hover {
-        color: #FFFFFF;
+    .contact a:hover {
         font-size: 1rem;
         line-height: 1.2rem;
-        text-decoration: none;
-      }
+    } 
 	.footer-logo {
 		grid-column: 1/2;
 		grid-row: 1/2;
@@ -164,6 +166,9 @@
 		grid-column: 1/4;
 		grid-row: 2/3;
 	}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
-
-
