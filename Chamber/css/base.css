@@ -473,8 +473,96 @@ section div {
   transition: filter 0.5s;
 }
 
-
+/* directory page */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: #fff;
 }
+
+.cardSection {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  border: 1px solid #064e40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#000;
+}
+
+.cardSection img {
+  max-width: 50%;
+}
+
+.dirBox {
+  display: block;
+  background-color: #eee;
+}
+
+.cardSection h2 {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.dirButtons {
+  text-align: center;   
+  background-color: #eee;
+  box-shadow: none;
+}
+
+button.listBtn, button.gridBtn {
+  margin: 3px;
+  border: 2px solid #064e40;
+  background-color: #6EB43F;
+  font-size: 40px;
+  color: black;
+}
+
+.listBtn:hover, .gridBtn:hover {
+  background-color: #F7F7F7;
+  color: #6EB43F;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+td {
+  padding: 10px;
+  font-size: 15px;
+}
+.dirBox h2 {
+  margin-left: .7em;
+  color: black;
+  text-shadow: none;
+}
+.cards h2, .lists h2 {
+  color: #000;
+  display: block;
+}
+.cards p, .lists p {
+  font-size: 15px;
+}
+.dirButtons{ 
+  margin-bottom: 1em;
+}
+.cards a, .lists a {
+  color: #000;
+  text-decoration: revert;
+}
+.cards a:hover, .lists a:hover {
+  font-size: inherit;
+}
+tr, tr a {
+  display: grid;
+  padding-left: 1em;
+}
+
+
+
+/* last visit */
 .last-visit {
 align-content: center;
 justify-content: center;

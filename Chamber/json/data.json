@@ -1,0 +1,88 @@
+{
+  "directory": [
+    {
+      "businessname": "A Dog's Life Pet Salon & Boutique",
+      "address": "7812 Louetta Rd. Spring Creek, TX  77379",
+      "phone": "(281) 370-3647",
+      "website": "http://adogslifepetsalon.com",
+      "logourl": "images/directory_images/dog.webp"
+    },
+    {
+      "businessname": "CenterPoint Energy",
+      "address": "2301 Gears Rd. Spring Creek, TX 77067",
+      "phone": "(713) 945-4801",
+      "website": "https://www.centerpointenergy.com/en-us",
+      "logourl": "images/directory_images/centerpoint.webp"
+    },
+    {
+      "businessname": "Cyber Security Informer",
+      "address": "401 East 34th St. Suite N13K New York City, NY 10016",
+      "phone": "(404) 680-3784",
+      "website": "https://www.cybersecurityinformer.com/",
+      "logourl": "images/directory_images/cyber.webp"
+    },
+    {
+      "businessname": "ExxonMobil Houston Campus",
+      "address": "22777 Springwoods Village Pkwy Spring Creek, TX 77389",
+      "phone": "(800) 582-3645",
+      "website": "https://corporate.exxonmobil.com",
+      "logourl": "images/directory_images/exxon.webp"
+    },
+    {
+      "businessname": "HCA Houston Healthcare",
+      "address": "2540 FM 2920 Spring Creek, TX 77388",
+      "phone": "(713) 790-3333",
+      "website": "https://www.sc-houstonhealth.org",
+      "logourl": "images/directory_images/health.webp"
+    },
+    {
+      "businessname": "InteractiveTel",
+      "address": "8300 Cypress Creek Pkwy., Suite 300 Spring Creek, TX 77070",
+      "phone": "(888) 290-0038",
+      "website": "https://interactivetel.com",
+      "logourl": "images/directory_images/interactive.webp"
+    },
+    {
+      "businessname": "Mellow Moovers",
+      "address": "11714 Boudreaux Rd. Spring Creek, TX 77375",
+      "phone": "(713) 376-4781",
+      "website": "https://www.mellowmoovers.com",
+      "logourl": "images/directory_images/moving.webp"
+    },
+    {
+      "businessname": "Minuteman Press",
+      "address": "5041 FM 2920 Spring Creek, TX 77388",
+      "phone": "(713) 389-5501",
+      "website": "https://www.minutemanpressfm2920.com",
+      "logourl": "images/directory_images/minuteman.webp"
+    },
+    {
+      "businessname": "Molen & Associates Tax Preparation",
+      "address": "11555 Champion Forest Dr. Spring Creek, TX 77066",
+      "phone": "(281) 440-6279",
+      "website": "https://www.molentax.com",
+      "logourl": "images/directory_images/molen.webp"
+    },
+    {
+      "businessname": "SAVVY The Business Magazine",
+      "address": "340 N Sam Houston Parkway E #260 Spring Creek, TX 77060",
+      "phone": "(281) 238-5109",
+      "website": "https://www.savvymag.biz",
+      "logourl": "images/directory_images/savvy.webp"
+    },
+    {
+      "businessname": "Spring Creek Signs",
+      "address": "17126 Stuebner Airline Rd Spring Creek, TX 77379",
+      "phone": "(713) 730-3330",
+      "website": "https://www.sc-signs.com",
+      "logourl": "images/directory_images/sign.webp"
+    },
+    {
+      "businessname": "Vertical Web Hosting & Design",
+      "address": "9434 Katy Fwy., #360 Spring Creek, TX 77055",
+      "phone": "(713) 703-3030",
+      "website": "https://www.verticalweb.com",
+      "logourl": "images/directory_images/vertical.webp"
+    }
+  ]
+}

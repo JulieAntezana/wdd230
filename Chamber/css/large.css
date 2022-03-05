@@ -171,4 +171,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    /* directory page */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid var(--nav-active-link-greyish);
+    }
 }
