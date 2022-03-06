@@ -1,5 +1,5 @@
 // store resource URL in a const
-const requestURL = "json/data.json";
+const requestURL = "https://julieantezana.github.io/wdd230/Chamber/json/data.json";
 const cards = document.querySelector(".cards");
 const lists = document.querySelector(".lists")
 
