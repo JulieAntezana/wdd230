@@ -8,28 +8,28 @@ fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
+
 // validate data received
     .then(function (jsonData) {
         // console.table(jsonData);
         const directoryList = jsonData["directory"];
         // display default view
-        directoryList.forEach(displayList);
-});
- 
-    // const cardView = document.querySelector(".cardButton");
-    // const listView = document.querySelector(".listButton");
+        directoryList.forEach(displayDir);
+    
+        const cardView = document.querySelector(".cardButton");
+        const listView = document.querySelector(".listButton");
 
-    // // display listView     
-    // listView.addEventListener("click", function () {
-    //     toggleList()
-    //     directory.forEach(displayList);
-    // });
-    // // display cardView
-    // cardView.addEventListener("click", function () {
-    //     toggleCard()
-    //     directory.forEach(displayDir);
-    // });
-
+        // display listView     
+        listView.addEventListener("click", function () {
+            toggleList()
+            directoryList.forEach(displayList);
+        });
+        // display cardView
+        cardView.addEventListener("click", function () {
+            toggleCard()
+            directoryList.forEach(displayDir);
+        });
+    });
 
 function displayDir(directory) {
     // create elements to add to the document
@@ -68,16 +68,11 @@ function displayList(directory) {
     lists.appendChild(tr);  
 }
 
-// function toggleCard() {
-//     document.getElementById("cardToggle").style.display = "grid";
-//     document.getElementById("listToggle").style.display = "none";
-// }
-// function toggleList() {
-//     document.getElementById("listToggle").style.display = "block";
-//     document.getElementById("cardToggle").style.display = "none";
-// }
-
-function dirButtonToggle() {
-    document.getElementById('directButton').classList.toggle('active');
-    document.getElementById('directContainer').classList.toggle('active');
-  }
+function toggleCard() {
+    document.getElementById("cardToggle").style.display = "grid";
+    document.getElementById("listToggle").style.display = "none";
+}
+function toggleList() {
+    document.getElementById("listToggle").style.display = "block";
+    document.getElementById("cardToggle").style.display = "none";
+}
