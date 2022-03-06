@@ -562,6 +562,15 @@ tr, tr a {
   padding-left: 1em;
 }
 
+.wireframe {
+  display: flex;
+  justify-content: center;
+}
+
+.wireframe img {
+  max-width: 70%;
+}
+
 /* last visit */
 .last-visit {
 align-content: center;
