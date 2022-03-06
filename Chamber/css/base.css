@@ -511,12 +511,13 @@ section div {
   box-shadow: none;
 }
 
-button.listBtn, button.gridBtn {
+button.listButton, button.cardButton {
   margin: 3px;
   border: 2px solid #064e40;
   background-color: #6EB43F;
   font-size: 40px;
   color: black;
+  box-shadow:#060606;
 }
 
 .listBtn:hover, .gridBtn:hover {
@@ -543,12 +544,13 @@ td {
   display: block;
 }
 .cards p, .lists p {
-  font-size: 15px;
+  font-size: 1rem;
 }
 .dirButtons{ 
   margin-bottom: 1em;
 }
 .cards a, .lists a {
+  font-size: .7rem;
   color: #000;
   text-decoration: revert;
 }
@@ -559,8 +561,6 @@ tr, tr a {
   display: grid;
   padding-left: 1em;
 }
-
-
 
 /* last visit */
 .last-visit {
