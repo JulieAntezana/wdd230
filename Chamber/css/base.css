@@ -505,13 +505,14 @@ section div {
   color: black;
 }
 
-.dirButtons {
+.button-container{
   text-align: center;   
   background-color: #eee;
   box-shadow: none;
+  margin-bottom: 1em;
 }
 
-button.listButton, button.cardButton {
+button.cardButton, button.listButton {
   margin: 3px;
   border: 2px solid #064e40;
   background-color: #6EB43F;
@@ -520,7 +521,7 @@ button.listButton, button.cardButton {
   box-shadow:#060606;
 }
 
-.listBtn:hover, .gridBtn:hover {
+.tab-button:hover, .tab-button:hover {
   background-color: #F7F7F7;
   color: #6EB43F;
   cursor: pointer;
@@ -545,9 +546,6 @@ td {
 }
 .cards p, .lists p {
   font-size: 1rem;
-}
-.dirButtons{ 
-  margin-bottom: 1em;
 }
 .cards a, .lists a {
   font-size: .7rem;

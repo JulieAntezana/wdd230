@@ -14,7 +14,7 @@ fetch(requestURL)
         // console.table(jsonData);
         const directoryList = jsonData["directory"];
         // display default view
-        directoryList.forEach(displayDir);
+        directoryList.forEach(displayList);
     
         const cardView = document.querySelector(".cardButton");
         const listView = document.querySelector(".listButton");

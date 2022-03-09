@@ -1,0 +1,13 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  text-shadow: 0 2px 15px #03045e;
+}
+
+#current-temp, #weathericon figcaption {
+  font-size: 1.2em;
+  color: #03045e;
+}
