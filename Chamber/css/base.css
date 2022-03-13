@@ -29,7 +29,7 @@ body {
 }
 
 .banner p {
-  color:#FFFFFF;
+  color:#f3e30a;
 }
 header {
   display: grid;
@@ -84,7 +84,7 @@ h3 {
   background-color: #6EB43F;
   grid-column: 1/4;
   text-align: center;
-  color: #ffffff;
+  color: #000;
   /* color:#064e40; */
   max-height: 1.5rem;
 }
@@ -175,9 +175,6 @@ main div {
   width: 100%;
 }
 #joinButton {
-  /* color:#064e40;
-  background-color: #6eb43f;
-  border-color: #064e40; */
   background: radial-gradient(#fff, rgba(37, 59, 83, 0.8));
   color: #000;
   padding: 10px 15px;
@@ -186,15 +183,13 @@ main div {
   cursor: pointer;
   position: absolute;
   font-size: 16px;
+  font-weight: 700;
   bottom: 40px;
   right: 15px;
   border-radius: 8px;
   margin-right: 2%;
 }
 #join2Button {
-  /* color:#064e40;
-  background-color: #6eb43f;
-  border-color: #064e40; */
   background: radial-gradient(#fff, rgba(37, 59, 83, 0.8));
   color: #000;
   padding: 10px 15px;
@@ -203,6 +198,8 @@ main div {
   cursor: pointer;
   border-radius: 8px;
   margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
 }
 /* #join2Button {
   color:#064e40;
@@ -397,7 +394,7 @@ footer .contact a:hover {
 	grid-row: 5/6;
 	letter-spacing: 1.5pt;
 	text-align: center;
-  color:#fff;
+  color: #000);
 }
 
 /********footer personal info**********/
