@@ -1,78 +1,118 @@
-// store resource URL in a const
-const requestURL = "https://julieantezana.github.io/wdd230/Chamber/json/data.json";
-const cards = document.querySelector(".cards");
-const lists = document.querySelector(".lists");
+const cardList = document.querySelector(".card-list");
+// const requestURL = "https://julieantezana.github.io/wdd230/Chamber/json/data.json";
+const directoryURL = "json/data.json";
+const medium = window.matchMedia("(min-width:545px) and (max-width: 1079px)");
 
-// fetch data and return in json format
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
+let width = window.innerWidth;
 
-// validate data received
-    .then(function (jsonData) {
-        // console.table(jsonData);
-        const directoryList = jsonData["directory"];
-        // display default view
-        directoryList.forEach(displayList);
-    
-        const cardView = document.querySelector(".cardButton");
-        const listView = document.querySelector(".listButton");
-
-        // display listView     
-        listView.addEventListener("click", function () {
-            toggleList()
-            directoryList.forEach(displayList);
-        });
-        // display cardView
-        cardView.addEventListener("click", function () {
-            toggleCard()
-            directoryList.forEach(displayDir);
-        });
-    });
-
-function displayDir(directory) {
-    // create elements to add to the document
-    let card = document.createElement("section");
-    card.className = "cardSection";
-    let businessname = document.createElement("h2");
-    let logo = document.createElement("img");
-    let address = document.createElement("p");
-    let phone = document.createElement("p");
-    let website = document.createElement("p");
-// add the directory data to the HTML 
-    businessname.textContent = directory.businessname;
-    address.innerHTML = directory.address;
-    phone.innerHTML = directory.phone;
-    logo.setAttribute('src', directory.logourl);
-    logo.setAttribute('alt', `${directory.businessname} logo`);
-    logo.setAttribute('loading', 'lazy');
-    website.setAttribute('class','link'); 
-    website.innerHTML = "<a href=" + `${directory.website}` + ">" + `${directory.website}`;
-    card.appendChild(logo);
-    card.appendChild(businessname);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(website);
-    cards.appendChild(card);
+function make_cards(business) {
+    //Create cards from each item of the fetched list
+  return `<div class="card">
+            <img src = ${business.logourl} alt = ${business.businessname} loading="lazy">
+            <name>${business.businessname}</name>
+            <p>${business.address} </p>
+            <p>${business.phone}</p>
+            <a href="${business.website}" target="_blank">${business.website}</a>
+        </div>`;
 }
 
-function displayList(directory) {
-    let tr = document.createElement("tr");
-    let website = document.createElement("p");
-    tr.innerHTML = `<td>${directory.businessname} </td> <td>${directory.phone}</td> <td>${directory.address}</td> `;
-    website.setAttribute('class','link'); 
-    website.innerHTML = "<a href=" + `${directory.website}` + ">" + `${directory.website}`;
-    tr.appendChild(website);
-    // append the list view
-    lists.appendChild(tr);  
+function make_list(business) {
+    //Create list items from each item of the fetched list
+
+  return `
+    <tr>
+    <td>${business.businessname}</td>
+    <td>${business.address}</td>
+    <td>${business.phone}</td>
+    <td><a href="${business.website}" target="_blank">${business.website}</a></td>
+    </tr>`;
 }
 
-function toggleCard() {
-    document.getElementById("cardToggle").style.display = "grid";
-    document.getElementById("listToggle").style.display = "none";
+class setDefView {
+    // initialzes with a def view then the method setView checks to set a default view on resize but prevent the chrome mobile
+    // scroll resize from triggering the resize event
+
+    const(medium, list){
+        this.list = list;
+
+        if (medium.matches) {
+            // If media query matches
+          listView(this.list);
+        } else {
+          gridView(this.list);
+        }
+    }
+
+    setView(medium) {
+        //checks the viewport and set the default view either grid or list
+        if(window.innerWidth != width){
+            if (medium.matches) {
+                // If media query matches
+                listView(this.list);
+            } else {
+                gridView(this.list);
+            }
+        }
+    }
 }
-function toggleList() {
-    document.getElementById("listToggle").style.display = "block";
-    document.getElementById("cardToggle").style.display = "none";
+
+// Fetch the JSON data for the directory
+fetch(directoryURL)
+  .then((response) => {
+    return response.ok ? response.json() : console.log("error");
+  })
+  .then((data) => {
+    console.table(data);
+    let business = data["business"];
+
+
+    //A calls the funtion that sets the default view for medium screen as list and leaves the others as cards
+    const defView = new setDefView(medium, business);
+    defView.setView(medium);
+    window.addEventListener("resize", () => defView.setView(medium));
+
+    //event listener for button click
+    document
+      .querySelector("#grid-view")
+      .addEventListener("click", () => gridView(business));
+    document
+      .querySelector("#list-view")
+      .addEventListener("click", () => listView(business));
+});
+
+function gridView(business) {
+// change button color to currently active
+  let gridBtn = document.querySelector("#grid-view");
+  let listBtn = document.querySelector("#list-view");
+
+  gridBtn.style.backgroundColor = "#F7F7F7";
+  listBtn.style.backgroundColor = "#6EB43F";
+
+  //sends the grid view to the html page
+  cardList.innerHTML = "";
+  const card = business.map(make_cards);
+  const cards = document.createElement("section");
+  cards.innerHTML = card.join(" ");
+  cards.className = "cards";
+  cardList.appendChild(cards);
 }
+
+function listView(business) {
+
+    // change button color to currently active
+  let gridBtn = document.querySelector("#grid-view");
+  let listBtn = document.querySelector("#list-view");
+
+  gridBtn.style.backgroundColor = "#6EB43F";
+  listBtn.style.backgroundColor = "#F7F7F7";
+    //sends the list view to the html page
+
+  cardList.innerHTML = "";
+
+  const list = business.map(make_list);
+  const items = document.createElement("table");
+  items.innerHTML = list.join(" ");
+  items.className = "list";
+  cardList.appendChild(items);
+}
+

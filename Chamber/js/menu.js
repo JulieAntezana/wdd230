@@ -4,3 +4,4 @@ function toggleMenu() {
 }
 const bar = document.getElementById("hamButton");
 bar.onclick = toggleMenu
+

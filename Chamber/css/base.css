@@ -17,7 +17,7 @@ body {
   /* background: radial-gradient(#03045e, rgba(37, 59, 83, 0.9)); */
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .banner {
@@ -239,19 +239,34 @@ h2 {
   justify-self: center;
   border: solid rgba(37, 59, 83, 0.8);
 }
-.weather p {
-  font-size: 25px;
+.weather p{
+  font-size: 2rem;
+  font-weight: 700;
+  color:#6eb43f;
 }
+
 .weather img {
   margin-left: 1em;
   float: left;
 }
-.weather span:nth-child(1) {
-  font-size: 16px;
-  border-top: #FFFFFF;
+
+.weather hr {
+  height: 0.3rem;
+  border: none;
+  margin-top: 0;
+  background-color: rgba(37, 59, 83, 0.8);
 }
-.weather span:nth-child(2) {
-  font-size: 16px;
+
+a {
+  color: #6EB43F;
+  font-size: .8rem;
+  line-height: 1rem;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  font-size: .8rem;
+  text-decoration: none;
 }
 
 .join {
@@ -306,17 +321,7 @@ footer h1 {
   font-size: 1.2rem;
   color: #6EB43F;
 }
-.contact a {
-  color: #6EB43F;
-  font-size: .8rem;
-  line-height: 1rem;
-  text-decoration: none;
-}
-.contact a:hover {
-  color: #fff;
-  font-size: .8rem;
-  text-decoration: none;
-}
+
 .project-info {
   background-color:#6eb43f; 
   color:#064e40;
@@ -395,9 +400,9 @@ footer .contact a:hover {
   color:#fff;
 }
 
-/******************/
-.footerlogo img {
-	width: 150px;
+/********footer personal info**********/
+footer div picture img {
+	width: 80px;
 	height: auto;
 }
 
@@ -473,25 +478,29 @@ section div {
   transition: filter 0.5s;
 }
 
-/* directory page */
+/***************** directory page *****************/
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  background-color: #fff;
+  background-color: #eee;
 }
 
-.cardSection {
+.card {
   margin: 0.25rem;
-  padding: 0.35rem;
+  padding: 1.5rem;
   border: 1px solid #064e40;
+  border-radius: 2px;
+  box-shadow: 0 3px 8px 10px #f1f1f1;
   display: flex;
   flex-direction: column;
   align-items: center;
   color:#000;
+  background-color: #fff;
+  border-radius: 5px 5px;
 }
 
-.cardSection img {
-  max-width: 50%;
+.card img {
+  max-width: 70%;
 }
 
 .dirBox {
@@ -499,65 +508,77 @@ section div {
   background-color: #eee;
 }
 
-.cardSection h2 {
-  font-size: 1rem;
+.card h2 {
+  font-size: .8rem;
   text-align: center;
   color: black;
 }
 
-.button-container{
+.switch{
   text-align: center;   
   background-color: #eee;
   box-shadow: none;
   margin-bottom: 1em;
 }
 
-button.cardButton, button.listButton {
+.switch button {
   margin: 3px;
   border: 2px solid #064e40;
   background-color: #6EB43F;
   font-size: 40px;
-  color: black;
-  box-shadow:#060606;
+  color:#ddd ;
 }
 
-.tab-button:hover, .tab-button:hover {
-  background-color: #F7F7F7;
-  color: #6EB43F;
+.switch button:hover {
+  color: #03045e;
   cursor: pointer;
 }
 
-tr:nth-child(even) {
+.list tr{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 15px 0 15px 0;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-align: left;
+} 
+
+.list tr:nth-child(even) {
   background-color: white;
 }
 
-td {
-  padding: 10px;
-  font-size: 15px;
+.list td {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: .8rem;
 }
 .dirBox h2 {
-  margin-left: .7em;
+  margin-left: .8em;
   color: black;
   text-shadow: none;
 }
-.cards h2, .lists h2 {
+.card h2, .list h2 {
   color: #000;
   display: block;
 }
-.cards p, .lists p {
-  font-size: 1rem;
+.card p, .list p {
+  font-size: .8rem;
 }
-.cards a, .lists a {
-  font-size: .7rem;
+.card a, .list a {
+  font-size: .8rem;
   color: #000;
-  text-decoration: revert;
+  text-decoration: none;
 }
-.cards a:hover, .lists a:hover {
-  font-size: inherit;
+.card a:hover, .list a:hover {
+  font-size: .8rem;
+  color:#6eb43f;
 }
-tr, tr a {
-  display: grid;
-  padding-left: 1em;
+
+.list tr, tr a {
+  padding-left: 1rem;
+  text-align: left;
 }
 
 .wireframe {

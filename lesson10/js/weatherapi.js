@@ -14,5 +14,5 @@ fetch(apiurl)
     document.querySelector('#icon-src').textContent = iconsrc;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
     document.querySelector('#weathericon').setAttribute('alt', desc);
-    document.querySelector('figcaption').textContent = desc; 
+    document.querySelector('figcaption').textContent = desc;    
 });

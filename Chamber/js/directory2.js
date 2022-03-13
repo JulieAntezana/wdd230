@@ -1,6 +1,6 @@
 // store resource URL in a const
-// const requestURL = 'https://julieantezana.github.io/wdd230/Chamber/json/data.json';
-const requestURL = "data.json"
+const requestURL = 'https://julieantezana.github.io/wdd230/Chamber/json/data.json';
+//const requestURL = "data.json"
 const cards = document.querySelector('div.cards');
 // const lists = document.querySelector('.lists');
 const listButton = document.querySelector('#list-btn');

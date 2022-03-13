@@ -171,11 +171,38 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    /* directory page */
+
+    /* business directory */
+
+    /* .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+        padding: 2rem;
+    } */
+
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-row-gap: 2rem;
+    max-width: 71rem;
+    margin: 0 auto;
+    }
+
+    .card p {
+        margin-bottom: 3rem;
+    }
+
     table {
         border-collapse: collapse;
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid var(--nav-active-link-greyish);
+        margin: 0 auto;
+        text-align:center;
+        padding: 2rem;
+        line-height: 2rem;
+      }
+
+    .list tr {
+        display: table-row;
     }
+
+
 }
