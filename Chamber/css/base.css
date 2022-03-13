@@ -85,7 +85,7 @@ h3 {
   grid-column: 1/4;
   text-align: center;
   color: #000;
-  /* color:#064e40; */
+  font-weight: 700;
   max-height: 1.5rem;
 }
 nav button {
@@ -319,17 +319,6 @@ footer h1 {
   color: #6EB43F;
 }
 
-.project-info {
-  background-color:#6eb43f; 
-  color:#064e40;
-} 
-#lastmod {
-  font-family: "Montserrat Light";
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1rem;
-}
-
 footer {
 	background-color: var(--header-footer-background-color);
 	display: grid;
@@ -388,13 +377,23 @@ footer .contact a:hover {
   font-size: .8rem;
   text-decoration: none;
 }
+ 
+#lastmod {
+  font-family: "Montserrat Light";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1rem;
+}
+
 
 .project-info {
 	grid-column: 1/2;
 	grid-row: 5/6;
 	letter-spacing: 1.5pt;
 	text-align: center;
-  color: #000);
+  color: #000;
+  background-color:#6eb43f; 
+  font-weight: 700;
 }
 
 /********footer personal info**********/
