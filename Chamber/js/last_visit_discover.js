@@ -7,8 +7,6 @@ let timeBetween = currentTime - storageTime
 
 localStorage.setItem("visited-last", lastTime);
 
-
-
 const Factor = 1000 * 60 * 60 * 24;
 
 const daysBetween = Math.round(Number(timeBetween / Factor));
