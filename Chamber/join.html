@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Julie Antezana">
   <meta name="description"
-    content="Home page for Spring Creek Chamber of Commerce Website Planning Document for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    content="Membership Application page for Spring Creek Chamber of Commerce Website Planning Document for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
   <link rel="shortcut icon" href="favicon.ico">
   <title>Spring Creek Chamber of Commerce</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -23,7 +23,7 @@
   <script defer src="js/weather.js"></script>
 </head>
 
-<body>
+<div class="body">
   <header>
     <div class="logo">
       <a href="index.html"><img class="sclogo" src="images/sclogo.webp" alt="Spring Creek Chamber of Commerce Logo"></a>
@@ -63,27 +63,27 @@
       </ul>
     </nav>
   </header>
-  <main class="form">
-    <h3>Membership Application</h3>
+  <div class="form">
+    <h1>Membership Application</h1>
     <form action="thankyou.html">
       <fieldset>
         <legend>Contact Information</legend>
-        <label>First Name<span>*</span>
+        <label class="contact-input">First Name*<span>*</span>
           <input name="name" pattern="^[A-Za-z]{5,}[A-Za-z]$" type="text" required>
         </label>
-        <label>Last Name<span>*</span>
+        <label class="contact-input">Last Name*<span>*</span>
           <input name="name" pattern="^[A-Za-z]{5,}[A-Za-z]$" type="text" required>
         </label>
-        <label>Business Position Title
+        <label class="contact-input">Business Position Title
           <input name="title" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" minlength="7">
         </label>
-        <label>Email<span>*</span>
+        <label class="contact-input">Email*<span>*</span>
           <input name="email" type="email" placeholder="someone@gmail.com" required>
         </label>
-        <label>Cell Phone Number<span>*</span>
+        <label class="contact-input">Phone Number*<span>*</span>
           <input name="phone" type="tel" required>
-        </label>
-        <label>Business Name<span>*</span>
+        </label >
+        <label class="contact-input">Business Name*<span>*</span>
           <input name="title" type="text" required>
         </label>
       </fieldset>
@@ -113,7 +113,7 @@
       <input type="submit" value="Join Spring Creek Chamber">
       <input type="hidden" name="language" id="inputHidden">
     </form>
-  </main>
+  </div>
   </div>
   <hr id="hr-1">
   <hr id="hr-2">
@@ -146,6 +146,6 @@
     </div>
   </footer>
   </div>
-</body>
+</div>
 
 </html>
