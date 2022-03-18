@@ -57,7 +57,7 @@ fetch(apiurl)
     if(ctemp <= 50 && wspeed > 3){
         let windchill = (35.74 + (0.6215 * ctemp))-(35.75 * Math.pow(wspeed,0.16)) + (0.4275*ctemp*Math.pow(wspeed,0.16));
         windchill = Math.round((windchill + Number.EPSILON) * 10) / 10;
-        document.querySelector("#windchill").innerHTML = `${Math.round(windchill)}`;
+        document.querySelector("#windchill").innerHTML = `${Math.round(windchill)}&#176;F`;
     } else{
         document.querySelector("#windchill").innerHTML = "N/A"
     }
