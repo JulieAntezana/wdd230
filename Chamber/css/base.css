@@ -362,6 +362,10 @@ a.join2Button:hover {
   color: #000;
 }
 
+p.contact {
+  text-align: center;
+}
+
 footer h1 {
   text-align: center;
 }
