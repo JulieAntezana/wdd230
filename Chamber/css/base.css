@@ -308,7 +308,7 @@ a:hover {
   border: solid rgba(37, 59, 83, 0.8);
 }
 
-.health {
+.spot2 {
   border-left: solid rgba(37, 59, 83, 0.8);
 }
 
@@ -317,27 +317,26 @@ a:hover {
 }
 
 .spotlights {
-  display: grid;
+  display:grid;
   grid-template-columns: 1fr;
   background: var(--header-footer-background-color);
-  /* background: radial-gradient(#03045E, rgba(37, 59, 83, 0.6)); */
 }
 
 .spotlights a {
   margin-left: 2em;
 }
 
-.sign-shop {
+.spot1 {
   grid-row: 1/2;
   padding: 0.5em;
 }
 
-.health {
+.spot2 {
   grid-row: 2/3;
   padding: 0.5em;
 }
 
-.moover {
+.spot3 {
   display: none;
 }
 
@@ -345,6 +344,11 @@ a:hover {
 .contact2,
 .contact3 {
   padding: 0.5em;
+  background-color: #fff;
+  border-radius: 15px;
+  border: solid rgba(37, 59, 83, 0.8);
+  box-shadow: 0px 6px 5px #000;
+  color: #000;
 }
 
 footer h1 {
@@ -468,7 +472,7 @@ footer div picture img {
   color: #fff;
 }
 
-/* discover page */
+/*************** discover page *************/
 section {
   color: #000;
 }
@@ -522,7 +526,6 @@ section div {
   padding: 1.5rem;
   border: 1px solid #064E40;
   border-radius: 2px;
-  box-shadow: 0 3px 8px 10px #F1F1F1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -577,7 +580,7 @@ section div {
   text-align: left;
 }
 
-.list tr:nth-child(even) {
+.list tr:nth-child(odd) {
   background-color: white;
 }
 
@@ -641,6 +644,12 @@ tr a {
   flex-wrap: wrap;
 }
 
+/* number of visits */
+.numVisits {
+  margin-top: -30px;
+  padding: 15px;
+}
+
 /****************** membership join form *************/
 .form {
   background-color: #eee;
@@ -662,7 +671,8 @@ fieldset legend {
 }
 
 form label {
-  font-size: 0.8em;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 form label,
@@ -679,6 +689,14 @@ div label {
   margin-top: 0;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+form label.contact-input input:required {
+  border-left: #ed3237 solid 4px;
+}
+
+form label.contact-input input:required:valid {
+  border-left: #008000 solid 4px;
 }
 
 .contact-input label,

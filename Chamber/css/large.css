@@ -69,17 +69,17 @@
     .spotlights p {
         margin: 0.3em;
     }
-    .sign-shop {
+    .spot1 {
         grid-row: 1/2;
         border-bottom: solid rgba(37, 59, 83, 0.8);
     }
-    .health {
+    .spot2 {
         grid-row: 2/3;
         grid-column: 1/2;
         border-left: none;
         border-bottom: solid rgba(37, 59, 83, 0.8);
     }
-    .moover {
+    .spot3 {
         display: block;
         grid-row: 3/4;
         padding: .5em;
