@@ -65,6 +65,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        align-items: center;
     }
     .spotlights p {
         margin: 0.3em;
@@ -202,6 +203,4 @@
     .list tr {
         display: table-row;
     }
-
-
 }

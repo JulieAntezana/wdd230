@@ -206,5 +206,42 @@
         display: table-row;
     }
 
-}
+    /************** contact page *************/
+    div.contact-form {
+        grid-column: 1/-1;
+        text-align: center;
+      }
+    
+    .contact-form {
+        background-color: #eee;
+        color: #000;
+        text-align: center;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .contact-address {
+        grid-column: 1/2;
+      }
+
+    .contact-map {
+        grid-column: 2/3;
+    }
+    
+    #formMainDiv {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #contact-us {
+        grid-column: 1/-1;
+        max-width: 450px;
+        justify-self: center;
+    }
+
+
+}
+  
