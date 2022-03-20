@@ -205,7 +205,7 @@ main div {
   width: 100%;
 }
 
-button a {
+a.joinButton {
   color: #000;
   font-size: 1.3rem;
   font-weight: 700;
@@ -240,7 +240,7 @@ button a {
   font-weight: 700;
 }
 
-button a:hover {
+a.joinButton:hover {
   font-size: 1.3rem;
   font-weight: 700;
   color: #FFFFFF;
@@ -299,6 +299,17 @@ a:hover {
   font-size: 0.8rem;
   text-decoration: none;
 }
+
+a.join2Button {
+  text-decoration: none;
+}
+
+a.join2Button:hover {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 
 .join {
   border-top: solid rgba(37, 59, 83, 0.8);
