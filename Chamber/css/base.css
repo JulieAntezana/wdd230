@@ -825,6 +825,10 @@ label.container {
   text-decoration: none;
 }
 
+h2.black-text {
+  color:#000;
+}
+
 form {
   background-color: #eee;
 }
