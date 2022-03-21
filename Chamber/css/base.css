@@ -142,7 +142,6 @@ nav ul li.active a {
 
 nav ul li a:hover {
   background-color: #6EB43F;
-  /* background-color: var(--nav-hover-background-color); */
   color: var(--nav-text-color);
 }
 
@@ -206,29 +205,22 @@ main div {
 }
 
 a.joinButton {
+  background-color: #064E40;
   color:#6EB43F;
   font-size: 1.3rem;
   font-weight: 700;
-}
-
-.joinButton {
-  /* background: radial-gradient(#fff, rgba(37, 59, 83, 0.8)); */
-  background-color: #064E40;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  font-size: 18px;
-  font-weight: 700;
   bottom: 40px;
   right: 15px;
   border-radius: 8px;
   margin-right: 2%;
 }
 
-.join2Button {
-  /* background: radial-gradient(#fff, rgba(37, 59, 83, 0.8)); */
+a.join2Button {
   background-color: #064E40;
   color:#6EB43F ;
   padding: 10px 15px;
@@ -242,16 +234,17 @@ a.joinButton {
 }
 
 a.joinButton:hover {
+  background-color: #6EB43F;
   font-size: 1.3rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   box-shadow: 0px 6px 5px #000;
 }
 
 a.join2Button:hover {
-  font-size: 1.3rem;
+  background-color: #6EB43F;
+  font-size: 16px;
   font-weight: 700;
-  color: #fff;
   box-shadow: 0px 6px 5px #000;
 }
 
@@ -279,7 +272,7 @@ h2 {
 }
 
 a.link:hover {
-  color: #fff
+  color: #fff;
 }
 
 #current-temp, .ctemp {
@@ -310,17 +303,6 @@ a {
 a:hover {
   color: #000;
   font-size: 0.8rem;
-  text-decoration: none;
-  box-shadow: 0px 6px 5px #000;
-}
-
-a.join2Button {
-  text-decoration: none;
-}
-
-a.join2Button:hover {
-  color: #000;
-  font-size: 1rem;
   text-decoration: none;
   box-shadow: 0px 6px 5px #000;
 }
