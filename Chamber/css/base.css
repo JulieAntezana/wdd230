@@ -338,6 +338,11 @@ a:hover {
   margin-left: 2em;
 }
 
+.spotlights img {
+  max-width: 200px;
+  height: 100%;
+}
+
 .spot1 {
   grid-row: 1/2;
   padding: 0.5em;
