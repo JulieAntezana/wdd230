@@ -590,12 +590,13 @@ section div {
   border: 2px solid #064E40;
   background-color: #6EB43F;
   font-size: 40px;
-  color: #ddd;
+  color: #03045E;
 }
 
 .switch button:hover {
   color: #03045E;
   cursor: pointer;
+  box-shadow: 0px 6px 5px #000;
 }
 
 .list tr {
