@@ -267,7 +267,7 @@ h2 {
 .weather {
   width: 300px;
   justify-self: center;
-  border: solid rgba(37, 59, 83, 0.8);
+  padding: 0.5em;
 }
 
 .weather p {
