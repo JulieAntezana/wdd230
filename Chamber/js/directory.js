@@ -1,5 +1,5 @@
+const directoryURL = "https://julieantezana.github.io/wdd230/Chamber/json/data.json"
 const cardList = document.querySelector(".card-list");
-const directoryURL = "./json/data.json";
 const medium = window.matchMedia("(min-width:545px) and (max-width: 1079px)");
 let width = window.innerWidth;
 function make_cards(business) {
