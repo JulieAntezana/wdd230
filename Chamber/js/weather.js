@@ -61,7 +61,6 @@ fetch(apiurl)
     } else{
         document.querySelector("#windchill").innerHTML = "N/A"
     }
-
 });
 
 
