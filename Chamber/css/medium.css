@@ -167,13 +167,13 @@
         text-align: center;
     }
 
-    .grid-container picture img {
+    .grid-container figure img {
         border: 2px solid #fff;
         box-shadow: 0px 6px 5px #ccc;
         border-radius: 190px;
     }
 
-    .grid-container picture img:hover {
+    .grid-container figure img:hover {
         box-shadow: 0 0 50px #333;
     }
 

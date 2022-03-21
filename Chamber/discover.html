@@ -1,164 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Julie Antezana">
-      <meta name="description" content="Discover page for Spring Creek Chamber of Commerce Website Planning Document for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <title>Discover Spring Creek</title> 
-      <link rel="stylesheet" href="css/normalize.css">  
-      <link rel="stylesheet" href="css/base.css">
-      <link rel="stylesheet" href="css/medium.css">
-      <link rel="stylesheet" href="css/large.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
-      <script defer src="js/dates.js"></script>
-      <script defer src="js/menu.js"></script>
-      <script defer src="js/lazyload.js"></script>
-      <script defer src="js/last_visit_discover.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-          <a href="index.html"><img class="sclogo" src="images/sclogo.webp" alt="Spring Creek Chamber of Commerce Logo"></a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Julie Antezana">
+  <meta name="description"
+    content="Discover page for Spring Creek Chamber of Commerce Website Planning Document for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Discover Spring Creek</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <script defer src="js/dates.js"></script>
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/lazyload.js"></script>
+  <script defer src="js/last_visit_discover.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img class="sclogo" src="images/sclogo.webp" alt="Spring Creek Chamber of Commerce Logo"></a>
+    </div>
+    <div class="chamber-name">
+      <h1>Spring Creek</h1>
+      <h2>Chamber of Commerce</h2>
+    </div>
+    <div class="social">
+      <a href="https://twitter.com" target="blank"><img src="images/twitter.png" alt="Twitter Link"></a>
+      <a href="https://instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link"></a>
+      <a href="https://linkedin.com" target="blank"><img src="images/linkedin.png" alt="Linkedin Link"></a>
+      <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link"></a>
+    </div>
+    <span id="aside"></span>
+    <nav>
+      <button id="hamButton" class>
+        <span>&#9776;</span>
+        <span>X</span>
+      </button>
+      <ul id="navBar" class>
+        <li><a href="index.html">
+            <div>Home</div>
+          </a></li>
+        <li><a href="discover.html">
+            <div>Discover</div>
+          </a></li>
+        <li><a href="directory.html">
+            <div>Directory</div>
+          </a></li>
+        <li><a href="join.html">
+            <div>Join</div>
+          </a></li>
+        <li><a href="contact.html">
+            <div>Contact</div>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1 id=discover>Discover Spring Creek</h1>
+    <div class="grid-container">
+      <figure id="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/creek.webp"
+          alt="Image of meandering stream with green grass and trees along the banks.">
+        <figcaption>Spring Creek</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp"
+          data-src="images\discover_images\longhorn-natilyn-hicks-aubrey-hicks-photography-unsplash.webp"
+          alt="Longhorn bull stands in a field at sunset.">
+        <figcaption>Texas Longhorn</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images\discover_images\sam-houston.webp"
+          alt="Image of 67 foot tall statue of Texas' first governor, Sam Houston.">
+        <figcaption>World's Tallest Statue of an American Hero</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images\discover_images\rodeo-kid.webp"
+          alt="Small girl presents her calf at the Houston Livestock Show.">
+        <figcaption>The Houston Livestalk Show and Rodeo</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images\discover_images\rodeo-houston.webp"
+          alt="Cowboy riding a bucking bronco at Rodeo Houston.">
+        <figcaption>RodeoHouston</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/championship-bbq.webp"
+          alt="spanish moss hanging from a tree branch">
+        <figcaption>World's Championship Bar-B-Que Contest</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/old-town-fried.webp"
+          alt="Old Town Spring corner store front featuring signs for fried twinkies and funnel cake.">
+        <figcaption>Over 100 shops at Old Town Spring</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/haunted-ghost-tour.webp"
+          alt="Old Wunche Brother's Store at night with wierd glowing light inside.">
+        <figcaption>Old Town Spring Haunted Ghost Tour</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/pumpkins.webp"
+          alt="Farm pickup truck with a load of pumpkins in the back.">
+        <figcaption>Pre-schoolers love the Pumpkin Patch</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/tree-farm.webp"
+          alt="People riding a kiddy train through a tree farm.">
+        <figcaption>The Old Time Christmas Tree Farm</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/hat-n-bluebonnets.webp"
+          alt="Small boy in a large cowboy hat sitting in a field of bluebonnet flowers">
+        <figcaption>Bluebonnet photos!</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/discover_images/placeholder.webp" data-src="images/discover_images/kayaking.webp" alt="Man rowing a kayak on a calm lake.">
+        <figcaption>Boating and recreation at Lake Conroe</figcaption>
+      </figure>
+    </div>
+  </section>
+  <hr id="wide-hr-1">
+  <hr id="hr-2">
+  <footer>
+    <div class="footer-logo">
+      <picture>
+        <img src="images/sclogo.webp" alt="SC Chamber logo">
+      </picture>
+      <div class="sc-coc">
+        <h1 class="title">SPRING CREEK</h1>
+        <p class="title2">Chamber of Commerce</p>
       </div>
-      <div class="chamber-name">
-          <h1>Spring Creek</h1> 
-          <h2>Chamber of Commerce</h2>
-      </div>
-      <div class="social">
-          <a href="https://twitter.com" target="blank"><img src="images/twitter.png" alt="Twitter Link"></a>
-          <a href="https://instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link"></a>
-          <a href="https://linkedin.com" target="blank"><img src="images/linkedin.png" alt="Linkedin Link"></a>
-          <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link"></a>
-      </div>
-      <span id="aside"></span>
-      <nav>
-          <button id="hamButton" class>
-              <span>&#9776;</span>
-              <span>X</span>
-          </button>
-          <ul id="navBar" class>
-              <li><a href="index.html"><div>Home</div></a></li>
-              <li><a href="discover.html"><div>Discover</div></a></li>
-              <li><a href="directory.html"><div>Directory</div></a></li>
-              <li><a href="join.html"><div>Join</div></a></li>
-              <li><a href="contact.html"><div>Contact</div></a></li>
-          </ul>
-      </nav>
-    </header>
-    <section>
-      <h1 id=discover>Discover Spring Creek</h1>
-      <div class="grid-container">
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/creek.webp"
-            alt="Image of meandering stream with green grass and trees along the banks.">
-          <figcaption>Spring Creek</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images\discover_images\longhorn-natilyn-hicks-aubrey-hicks-photography-unsplash.webp"
-            alt="Longhorn bull stands in a field at sunset.">
-          <figcaption>Texas Longhorn</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images\discover_images\sam-houston.webp"
-            alt="Image of 67 foot tall statue of Texas' first governor, Sam Houston.">
-          <figcaption>World's Tallest Statue of an American Hero</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images\discover_images\rodeo-kid.webp"
-            alt="Small girl presents her calf at the Houston Livestock Show.">
-          <figcaption>The Houston Livestalk Show and Rodeo</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images\discover_images\rodeo-houston.webp"
-            alt="Cowboy riding a bucking bronco at Rodeo Houston.">
-          <figcaption>RodeoHouston</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/championship-bbq.webp"
-            alt="spanish moss hanging from a tree branch">
-          <figcaption>World's Championship Bar-B-Que Contest</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/old-town-fried.webp"
-            alt="Old Town Spring corner store front featuring signs for fried twinkies and funnel cake.">
-          <figcaption>Over 100 shops at Old Town Spring</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/haunted-ghost-tour.webp"
-            alt="Old Wunche Brother's Store at night with wierd glowing light inside.">
-          <figcaption>Old Town Spring Haunted Ghost Tour</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/pumpkins.webp"
-            alt="Farm pickup truck with a load of pumpkins in the back.">
-          <figcaption>Pre-schoolers love the Pumpkin Patch</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/tree-farm.webp"
-            alt="People riding a kiddy train through a tree farm.">
-          <figcaption>The Old Time Christmas Tree Farm</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/hat-n-bluebonnets.webp"
-            alt="Small boy in a large cowboy hat sitting in a field of bluebonnet flowers">
-          <figcaption>Bluebonnet photos!</figcaption>
-        </figure>
-        <figure id="figure">
-          <img src="images/discover_images
-          /placeholder.webp" data-src="images/discover_images/kayaking.webp"
-            alt="Man rowing a kayak on a calm lake.">
-          <figcaption>Boating and recreation at Lake Conroe</figcaption>
-        </figure>
-      </div>
-    </section>
-    <hr id="wide-hr-1">
-    <hr id="hr-2">
-    <footer>
-      <div class="footer-logo">
-          <picture>
-              <img src="images/sclogo.webp" alt="SC Chamber logo">
-          </picture>
-          <div class="sc-coc">
-            <h1 class="title">SPRING CREEK</h1>
-              <p class="title2">Chamber of Commerce</p>
-          </div>
-      </div>
-      <div class="address">
-        <p>Contact</p>
-        <p>Spring Creek</p>
-        <p class="smaller">Chamber of Commerce</p>
-        <p>21021 Spring Brook Dr</p>
-        <p>Spring, TX 77379</p>
+    </div>
+    <div class="address">
+      <p>Contact</p>
+      <p>Spring Creek</p>
+      <p class="smaller">Chamber of Commerce</p>
+      <p>21021 Spring Brook Dr</p>
+      <p>Spring, TX 77379</p>
     </div>
     <div class="contact">
-        <p><strong>Phone:</strong> <a href="tel:2814404160"> (281) 440-4160</a></p>
-        <p><strong>Email:</strong> <a href="mailto:ChamberInfo@sctxchamber.org"> ChamberInfo@sctxchamber.org</a></p>
-        <p><a class="nodecoration" href="https://goo.gl/maps/3RyjrrC1KVYgniXUA" target="blank">🗺️ Location Map</a></p>
+      <p><strong>Phone:</strong> <a href="tel:2814404160"> (281) 440-4160</a></p>
+      <p><strong>Email:</strong> <a href="mailto:ChamberInfo@sctxchamber.org"> ChamberInfo@sctxchamber.org</a></p>
+      <p><a class="nodecoration" href="https://goo.gl/maps/3RyjrrC1KVYgniXUA" target="blank">🗺️ Location Map</a></p>
     </div>
-      <div class="project-info">
-        <div class="container" class="clearfix">
-          <div class="meet discover">
-            <p class="dayVisits">This is your first visit, Welcome.</p>
-          </div>
-          <p>&copy;<span id="currentyear"></span> Spring Creek Chamber of Commerce | <strong>Julie Antezana</strong> | WDD 230 Project</p>
-          <p id="lastmod"></p>
-          <p class="numVisits"></p>
+    <div class="project-info">
+      <div class="container" class="clearfix">
+        <div class="meet discover">
+          <p class="dayVisits">This is your first visit, Welcome.</p>
+        </div>
+        <p>&copy;<span id="currentyear"></span> Spring Creek Chamber of Commerce | <strong>Julie Antezana</strong> | WDD
+          230 Project</p>
+        <p id="lastmod"></p>
+        <p class="numVisits"></p>
       </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>

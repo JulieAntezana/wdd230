@@ -25,16 +25,16 @@ main {
     margin-bottom: 1em;
 }
 
-picture {
+figure {
     max-width: 100%;
     margin: 0 auto;
 }
 
-picture img[data-src] {
+figure img[data-src] {
     filter: blur(0.2em);
 }
 
-picture img {
+figure img {
     filter: blur(0em);
     transition: filter 0.5s;
     border: 2px solid #fff;
@@ -42,7 +42,7 @@ picture img {
     border-radius: 190px;
 }
 
-picture img:hover {
+figure img:hover {
     box-shadow: 0 0 50px #333;
 }
 

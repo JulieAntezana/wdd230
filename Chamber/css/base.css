@@ -511,20 +511,20 @@ section div {
   padding: 2rem;
 }
 
-.grid-container picture {
+.grid-container figure {
   max-width: 100%;
   margin: 0 auto;
 }
 
-.grid-container picture img[data-src] {
+.grid-container figure img[data-src] {
   filter: blur(0.2em);
 }
 
-.grid-container picture img[data-src]:hover {
+.grid-container figure img[data-src]:hover {
   border-radius: 5px 150px;
 }
 
-.grid-container picture img {
+.grid-container figure img {
   filter: blur(0em);
   transition: filter 0.5s;
 }
