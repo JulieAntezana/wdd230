@@ -216,20 +216,23 @@ a.joinButton {
   position: absolute;
   bottom: 40px;
   right: 15px;
+  border: 2px solid #000;
   border-radius: 8px;
   margin-right: 2%;
 }
 
 a.join2Button {
   background-color: #064E40;
-  color:#6EB43F ;
+  color:#6EB43F;
+  font-weight: 700;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  border: 2px solid #000;
   border-radius: 8px;
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -243,7 +246,7 @@ a.joinButton:hover {
 
 a.join2Button:hover {
   background-color: #6EB43F;
-  font-size: 16px;
+  font-size: 1.3rem;
   font-weight: 700;
   box-shadow: 0px 6px 5px #000;
 }
