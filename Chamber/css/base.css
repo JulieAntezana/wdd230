@@ -206,14 +206,14 @@ main div {
 }
 
 a.joinButton {
-  color: #000;
+  color:#6EB43F;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .joinButton {
-  background: radial-gradient(#fff, rgba(37, 59, 83, 0.8));
-  color: #000;
+  /* background: radial-gradient(#fff, rgba(37, 59, 83, 0.8)); */
+  background-color: #064E40;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
@@ -228,8 +228,9 @@ a.joinButton {
 }
 
 .join2Button {
-  background: radial-gradient(#fff, rgba(37, 59, 83, 0.8));
-  color: #000;
+  /* background: radial-gradient(#fff, rgba(37, 59, 83, 0.8)); */
+  background-color: #064E40;
+  color:#6EB43F ;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
@@ -243,7 +244,14 @@ a.joinButton {
 a.joinButton:hover {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #000;
+  color: #fff;
+  box-shadow: 0px 6px 5px #000;
+}
+
+a.join2Button:hover {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
   box-shadow: 0px 6px 5px #000;
 }
 
@@ -274,7 +282,7 @@ a.link:hover {
   color: #fff
 }
 
-.weather p {
+#current-temp, .ctemp {
   font-size: 2rem;
   font-weight: 700;
   color: #6EB43F;
@@ -316,7 +324,6 @@ a.join2Button:hover {
   text-decoration: none;
   box-shadow: 0px 6px 5px #000;
 }
-
 
 .join {
   border-top: solid rgba(37, 59, 83, 0.8);
