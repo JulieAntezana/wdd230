@@ -34,26 +34,26 @@ function make_spotlights(businesses) {
 
   return `<div class="spot1">
   <div class="contact1">
-  <h2>${bizOne.businessname}</h2>
+  <h3>${bizOne.businessname}</h3>
   <img src="${bizOne.logourl}" alt="${bizOne.businessname}" loading="lazy"/>
   <p><em>A Chamber Corporate Partner</em>
-  <p class="contact">${bizOne.phone} | <a href="${bizOne.website}"  target="_blank">Website</a></p>
+  <p><a class="contact" href="tel:${bizOne.phone}">${bizThree.phone} <a class="contact" href="${bizOne.website}"  target="_blank">Website</a></p>
   </div>
   </div>
   <div class="spot2">
   <div class="contact2">
-  <h2>${bizTwo.businessname}</h2>
+  <h3>${bizTwo.businessname}</h3>
   <img src="${bizTwo.logourl}" alt="${bizTwo.businessname}" loading="lazy"/>
   <p><em>Simply the Best in the Business</em>
-  <p class="contact">${bizTwo.phone} | <a href="${bizTwo.website}"  target="_blank">Website</a></p>
+  <p><a class="contact" href="tel:${bizTwo.phone}">${bizThree.phone} <a class="contact" href="${bizTwo.website}"  target="_blank">Website</a></p>
   </div>
   </div>
   <div class="spot3">
   <div class="contact3">
-  <h2>${bizThree.businessname}</h2>
+  <h3>${bizThree.businessname}</h3>
   <img src="${bizThree.logourl}" alt="${bizThree.businessname}" loading="lazy"/>
   <p><em>We care about Spring Creek</em>
-  <p class="contact">${bizThree.phone} | <a href="${bizThree.website}"  target="_blank">Website</a></p>
+  <p><a class="contact" href="tel:${bizThree.phone}">${bizThree.phone} <a class="contact" href="${bizThree.website}"  target="_blank">Website</a></p>
   </div>
   </div>`;
 }
