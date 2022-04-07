@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<htmllang="en">
+
+  <head>
+    <metacharset="UTF-8" />
+    <metahttp-equiv="X-UA-Compatible" content="IE=edge" />
+    <metaname="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Inn & Suites</title>
+    <meta name="description" content="Temple Inn & Suites Homepage />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Temple Inn & Suites</h1>
+      <nav class="primary">
+        <button id="ham">&#9776;</button>
+        <ul id="menu" class="visuallyhidden">
+          <li><a id="home" href="#">Home</a></li>
+          <li><a id="temples" href="./temples.html">Temples</a></li>
+          <li>
+            <a id="reservation" href="./reservation.html">Reservations</a>
+          </li>
+          <li><a id="services" href="./services.html">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <divclass="hero">
+        <divclass="hero-container">
+          <divclass="transhero">
+            <img src="images/hero.webp" alt="Aerial closeup view of the Moroni statue at the top of the Rio de Janeiro temple">
+            <h1>Called to Serve</h1>
+            <h2>Come to Stay</h2>
+            <p>
+              Whether you are coming for the first time or the fiftieth time, we are here to facilitate your visit to
+              the temple. </p>
+            </div>
+            <div class="weather-container">
+              <div class="weather-today">
+                <div class="todays-date">
+                  <h3 class="current-date">...</h3>
+                  <h4 class="current-month">loading...</h4>
+                </div>
+                <span class="weather-underline"></span>
+                <div class="todays-temp">
+                  <h4 class="current-temp">°F</h4>
+                  <p class="todays-desc">loading...</p>
+                  <p>Humidity: <span class="todays-hum">loading...</span></p>
+                </div>
+              </div>
+              <div class="weather-future">
+                <div class="next-day">
+                  <h4>Tomorrow</h4>
+                  <h5 class="tomorrows-temp">°F...</h5>
+                  <p class="tomorrows-desc">loading...</p>
+                  <p>Humidity: <span class="tomorrows-hum">loading...</span></p>
+                </div>
+                <div class="next-day">
+                  <h4 class="in-two-days-name">...</h4>
+                  <h5 class="in-two-days-temp">loading...</h5>
+                  <p class="in-two-days-desc">loading...</p>
+                  <p>Humidity: <span class="in-two-days-hum">loading...</span></p>
+                </div>
+                <div class="next-day">
+                  <h4 class="in-three-days-name">...</h4>
+                  <h5 class="in-three-days-temp">loading...</h5>
+                  <p class="in-three-days-desc">loading...</p>
+                  <p>
+                    Humidity: <span class="in-three-days-hum">loading...</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------Temple Highlight ------------------------ -->
+        <sectionclass="select-temple">
+          <divclass="selection-grid">
+            <divclass="selection-info">
+              <h3>Rio de Janeiro Brazil Temple</h3>
+              <p>
+                Temple Open House in Rio de Janeiro, Brazil - March 26, 2022 -April 30, 2022. Open house tours and
+                activities hosted daily (except for Sundays and April 2.) More detailed information about the open
+                house can be obtained at templorj.org.br. </p>
+              <p>Temple Dedication - Sunday, May 8, 2022</p>
+            </div>
+            <imgsrc="./images/temple.jpg" alt="The temple in Rio de Janeiro, Brazil" />
+          </div>
+        </section>
+
+        <!-- ------------------------------Welcome Section ------------------------ -->
+
+        <sectionclass="temple-hero">
+          <divclass="temple-trans-banner">
+            <h3>You are Welcome Here</h3>
+            <p> As you traverse to and from the temple, you will find the atmosphere at Temple Inn is
+              consistent with the uplifting and friendly environment inside the temple.</p>
+            <ahref="/templeinn/temples.html" class="make-reservation view-temps">View Temples</a>
+          </div>
+        </section>
+        <!-- ------------------------------Reservation Section ------------------------ -->
+
+        <sectionclass="reserve-hero">
+          <divclass="reserve-trans-banner">
+            <h3>Comfort and Convenience</h3>
+            <p>
+              Attending the temple is a joyous and uplifting event. We have several options befitting
+              your special occasion. The amenities at Temple Inn and Suites provide comfort,
+              convenience, and courtesy for a quality stay in a pleasant setting.
+            </p>
+            <ahref="/templeinn/reservation.html" class="make-reservation">Make a Reservation</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ------------------------------Footer------------------------ -->
+
+
+    <footer>
+      <divclass="footer-container">
+        <divclass="footer-form">
+          <h3>Contact Us</h3>
+          <formaction="./thankyou.html" method="get">
+            <label>
+              FULL-NAME <inputtype="text" name="fullname" required
+            /></label>
+            <label>E-MAIL <inputtype="email" name="email" required/></label>
+            <label>
+              YOUR MESSAGE
+              <textarea
+                name="contact-message"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <input
+              class="footer-form-button"
+              type="submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <divclass="footer-address-display">
+          <h3>Temple Inn & Suites</h3>
+          <divclass="footer-socials">
+            <ahref="http://facebook.com" target="_blank"
+              ><imgsrc="./images/facebook.png" alt="facebook"></a>
+            <ahref="http://instagram.com" target="_blank"
+              ><imgsrc="./images/instagram.png" alt="instagram"></a>
+          </div>
+          <divclass="footer-address">
+            <imgsrc="./images/location.png" alt="location">
+            <p>Temple Inn & Suites Headquarters</p>
+            <p>355 Wisconsin Avenue</p>
+            <p>Bethesda, MD  20814</p>
+          </div>
+          <divclass="footer-phone">
+            <imgsrc="./images/phone.png" alt="phone" />
+            <p>555-555-5555</p>
+          </div>
+        </div>
+        <pclass="copyright">
+          <spanid="copyright-year">©2020 </span>| Julie Antezana | WDD230
+        </p>
+        <pclass="weather">
+          Weather courtesy of
+          <ahref="https://openweathermap.org/" target="_blank">@OpenWeather</a>
+        </p>
+      </div>
+    </footer>
+    <scriptsrc="./js/menu.js"></script>
+    <scriptsrc="./js/weather.js"></script>
+  </body>
